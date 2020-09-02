@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="286.724" height="332.681" viewBox="0 0 286.724 332.681">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Rectangle_4" d="M0 0H286.724V332.681H0z" data-name="Rectangle 4" style="stroke:#707070;fill:none;stroke-width:3px"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__White_Speech_Bubble" data-name="White Speech Bubble" transform="translate(-1475.578 -1353.276)">
+        <g id="prefix__White_Speech_Bubble-2" data-name="White Speech Bubble" transform="translate(1475.578 1353.276)">
+            <path id="prefix__Path_5" d="M142.006.5c79.279 0 143.037 63.753 143.037 141.486a142.593 142.593 0 01-23.213 78.669c-9.676 14.767-14.3 32.263-10.886 49.583l10.529 53.362a6.188 6.188 0 01-9.222 6.522l-61.361-36.3a64.755 64.755 0 00-37.76-9.2q-5.505.415-11.123.416C62.685 285.04.5 222.857.5 141.987A141.01 141.01 0 01142.006.5z" data-name="Path 5" transform="translate(.59 .592)" style="stroke:#fff;stroke-miterlimit:10;fill:none;stroke-width:3px"/>
+        </g>
+    </g>
+</svg>

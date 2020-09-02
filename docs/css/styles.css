@@ -1,0 +1,232 @@
+/*! jmpr-site v1.0.0 | (c) 2020  | ISC License | git+https://github.com/moulson/jmpr-site.git */
+@font-face {
+  font-family: "Venti Extra Bold";
+  src: url("/fonts/VentiCF-ExtraBold.woff2");
+}
+
+/* line 6, src/sass/styles.scss */
+body {
+  max-width: 1330px;
+  margin: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* line 12, src/sass/styles.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 17, src/sass/styles.scss */
+.container-fluid.navy {
+  background-color: #042633;
+}
+
+/* line 22, src/sass/styles.scss */
+.container-fluid.lblue {
+  padding: 0;
+  background-color: #91d4f1;
+}
+
+/* line 25, src/sass/styles.scss */
+.container-fluid.lblue.speech {
+  padding: 0;
+  background-image: url("../images/speech_bubble_hi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #91d4f1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 187px;
+}
+
+/* line 40, src/sass/styles.scss */
+.logo-container {
+  text-align: center;
+}
+
+/* line 42, src/sass/styles.scss */
+.logo-container img {
+  max-width: 358px;
+  min-width: 200px;
+  width: 100%;
+}
+
+/* line 50, src/sass/styles.scss */
+.header .nav-list {
+  padding-top: 20px;
+  list-style: none;
+  text-align: right;
+  margin: auto;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+/* line 56, src/sass/styles.scss */
+.header .nav-list li {
+  font-size: 30px;
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 2px;
+}
+
+/* line 61, src/sass/styles.scss */
+.header .nav-list li a {
+  font-size: 30px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 67, src/sass/styles.scss */
+.header .nav-list li.separator {
+  color: #23a58f;
+  font-size: 60px;
+}
+
+/* line 74, src/sass/styles.scss */
+.header h1 {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 82, src/sass/styles.scss */
+.header_chart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+
+/* line 86, src/sass/styles.scss */
+.header_chart .sub {
+  margin-top: 30px;
+}
+
+/* line 88, src/sass/styles.scss */
+.header_chart .sub p {
+  font-family: "Venti Extra Bold";
+  line-height: 1;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+/* line 95, src/sass/styles.scss */
+.header_chart .main {
+  padding-right: 30px;
+}
+
+/* line 97, src/sass/styles.scss */
+.header_chart .main p {
+  font-family: "Venti Extra Bold";
+  color: #5cd8f2;
+  text-align: right;
+  font-size: 150px;
+  line-height: 0.93;
+  width: 100%;
+}
+
+/* line 107, src/sass/styles.scss */
+.header_chart .chart-container {
+  margin: auto;
+}
+
+/* line 109, src/sass/styles.scss */
+.header_chart .chart-container img {
+  float: right;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 118, src/sass/styles.scss */
+.header_contact {
+  margin-top: 50px;
+}
+
+/* line 120, src/sass/styles.scss */
+.header_contact p {
+  margin: 0;
+}
+
+/* line 123, src/sass/styles.scss */
+.header_contact .title {
+  color: #23a58f;
+  font-size: 70px;
+}
+
+/* line 127, src/sass/styles.scss */
+.header_contact .text {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+/* line 135, src/sass/styles.scss */
+.holding h1 {
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* line 144, src/sass/styles.scss */
+.section-2 p {
+  color: #042633;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: bold;
+}
+
+/* line 154, src/sass/styles.scss */
+#pricing .card {
+  width: 33%;
+  margin: auto;
+  display: inline-flex;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 154, src/sass/styles.scss */
+  #pricing .card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+}
+
+/* line 166, src/sass/styles.scss */
+#pricing .card .card-body .card-text {
+  height: 500px;
+}
+
+/* line 170, src/sass/styles.scss */
+#pricing .card .card-body h5, #pricing .card .card-body h6 {
+  text-align: center;
+}
+
+/* line 175, src/sass/styles.scss */
+#pricing .card .card-body li:before {
+  position: absolute;
+  content: 'L';
+  transform: rotateZ(45deg) scale(-1, 1);
+  display: block;
+  height: 20px;
+  width: 20px;
+  left: 30px;
+  border-radius: 100px;
+  background-color: #0f0;
+  padding: 0 5px;
+}
+
+/* line 193, src/sass/styles.scss */
+.section-header {
+  text-align: center;
+}
+
+/* line 197, src/sass/styles.scss */
+.section-sub {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
