@@ -13,189 +13,31 @@ html{
     scroll-behavior: smooth;
 }
 
-.container-fluid{
-    &.navy{
-        background-color: $navy;
-        
-    }
-
-    &.lblue{
-        padding: 0;
-        background-color: $babyblue;
-        &.speech{
-            padding: 0;
-            background-image: url('../images/speech_bubble_hi.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: $babyblue;
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: block;
-            width: 100%;
-            height: 187px;
-        }
-    }
-}
-
-.logo-container{
-    text-align:center;
-    img{
-        max-width: 358px;
-        min-width: 200px;
-        width:100%;
-    }
-}
-
-.header{
-    .nav-list{
-        padding-top: 20px;
-        list-style: none;
-        text-align: right;
-        margin: auto;
-        padding-inline-start: 0;
-        li{
-            font-size: 30px;
-            display: inline-block;
-            color: #ffffff;
-            padding: 0 2px;
-            a{
-                font-size: 30px;
-                display: inline-block;
-                color: #ffffff;
-                text-decoration: none;
-            }
-            &.separator{
-                color: $green;
-                font-size: 60px;
-            }
-        }
-    }
-
-    h1{
-        margin: auto;
-        color: #fff;
-        text-align: center;
-        margin-top: 50px;
-    }
-}
-
-.header_chart{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: $margin-lg;
-    .sub{
-        margin-top: $margin-md;
-        p{
-            font-family: $venti-extra-bold;
-            line-height: 1;
-            font-size: 70px;
-            color: #ffffff;
-        }
-    }
-    .main{
-        padding-right: $padding-md;
-        p{
-            font-family: $venti-extra-bold;
-            color: $lightblue;
-            text-align: right;
-            font-size: 150px;
-            line-height: 0.93;
-            width: 100%;
-        }
-    }
-
-    .chart-container{
-        margin: auto;
-        img{
-            float: right;
-            width: 100%;
-            margin: auto;
-        }
-    }
-    
-}
-
-.header_contact{
-    margin-top: 50px;
-    p{
-        margin: 0;
-    }
-    .title{
-        color: $green;
-        font-size: 70px;
-    }
-    .text{
-        color: #ffffff;
-        font-size: 60px;
-    }
-}
-
-
-.holding{
-    h1{
-        padding: 50px 0;
-        color: #fff;
-        text-align: center;
-        font-size: 32px;
-    }
-}
-
-.section-2{
-    p{
-        color: $navy;
-        font-size: 60px;
-        line-height: 72px;
-        font-weight: bold;
-    }
-}
-
-
-#pricing{
-    .card{
-
-        width: 33%;
-        margin: auto;
-        display: inline-flex;
-
-        @media screen and (max-width: 768px) {
-            width: 80%;
-            margin:auto;
-            display: flex;
-        }
-        .card-body{
-            .card-text{
-                height: 500px;
-            }
-
-            h5, h6{
-                text-align: center
-            }
-
-            li{
-                &:before{
-                    position: absolute;
-                    content: 'L';
-                    transform: rotateZ(45deg) scale(-1,1);
-                    display: block;
-                    height: 20px;
-                    width: 20px;
-                    left: 30px;
-                    border-radius: 100px;
-                    background-color: #0f0;
-                    padding: 0 5px;
-                }
-            }
-        }
-        
-    }
-}
-
-.section-header{
+.page-header{
+    font-family: 'futuramedium';
     text-align: center;
+    padding: 200px 0 100px 0;
 }
 
-.section-sub{
+.header-sub{
     text-align: center;
-    font-size: 24px;
-    width: 100%;
+    font-family: 'futuramedium'
+}
+
+.contact-container{
+    max-width: 1330px;
+    margin: 50px auto;
+
+    div{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .contact-btn{
+        padding: 10px 20px;
+        border: 1px solid #121212;
+        border-radius: 100px;
+        margin-top: 20px;
+        width: 250px;
+    }
 }

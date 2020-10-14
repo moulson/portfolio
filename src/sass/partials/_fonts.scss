@@ -6,3 +6,12 @@ $venti-extra-bold: 'Venti Extra Bold';
     font-family: $venti-extra-bold;
     src: url('/fonts/VentiCF-ExtraBold.woff2');
 }
+
+@font-face {
+    font-family: 'futuramedium';
+    src: url('/fonts/futura_medium_bt-webfont.woff2') format('woff2'),
+         url('/fonts/futura_medium_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
