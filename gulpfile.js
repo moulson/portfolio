@@ -239,7 +239,14 @@ var buildImages = function (done) {
 	return src(paths.images.input)
 		.pipe(imagemin())
 		.pipe(dest(paths.images.output));
-}
+};
+
+var quickImages = function (done) {
+	//if(!settings.img) return done();
+
+	return src(paths.images.input)
+		.pipe(dest(paths.images.output));
+};
 
 // Copy static files into output folder
 var copyFiles = function (done) {
@@ -280,7 +287,7 @@ var reloadBrowser = function (done) {
 
 // Watch for changes
 var watchSource = function (done) {
-	watch(paths.input, series(exports.default, reloadBrowser));
+	watch(paths.input, series(exports.quick, reloadBrowser));
 	done();
 };
 
@@ -303,10 +310,22 @@ exports.default = series(
 	)
 );
 
+exports.quick = series(
+	cleanDist,
+	parallel(
+		buildScripts,
+		lintScripts,
+		buildStyles,
+		buildSVGs,
+		quickImages,
+		copyFiles
+	)
+);
+
 // Watch and reload
 // gulp watch
 exports.watch = series(
-	exports.default,
+	exports.quick,
 	startServer,
 	watchSource
 );

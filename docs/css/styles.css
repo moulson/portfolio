@@ -34,13 +34,13 @@ html {
 .page-header {
   font-family: 'futuramedium';
   text-align: center;
-  padding: 200px 0 100px 0;
+  padding: 200px 0 20px 0;
 }
 
 @media screen and (max-width: 768px) {
   /* line 22, src/sass/styles.scss */
   .page-header {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 20px 0;
   }
 }
 
@@ -122,4 +122,32 @@ section.light {
 .row {
   padding: 0;
   margin: 0;
+}
+
+/* line 101, src/sass/styles.scss */
+.me-container {
+  width: 150px;
+  margin: 20px auto;
+}
+
+/* line 104, src/sass/styles.scss */
+.me-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 111, src/sass/styles.scss */
+.chevron:before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  left: 50%;
+  position: absolute;
+  bottom: 5%;
+  transform: rotate(135deg);
+  vertical-align: baseline;
+  border-color: #d1cdc7;
 }
