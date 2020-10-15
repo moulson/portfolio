@@ -27,34 +27,36 @@ html {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-destination: 0% 0%;
 }
 
-/* line 20, src/sass/styles.scss */
+/* line 23, src/sass/styles.scss */
 .page-header {
   font-family: 'futuramedium';
   text-align: center;
   padding: 200px 0 100px 0;
 }
 
-/* line 26, src/sass/styles.scss */
+/* line 29, src/sass/styles.scss */
 .header-sub {
   text-align: center;
   font-family: 'futuramedium';
 }
 
-/* line 31, src/sass/styles.scss */
+/* line 34, src/sass/styles.scss */
 .contact-container {
   max-width: 1330px;
   margin: 50px auto;
 }
 
-/* line 35, src/sass/styles.scss */
+/* line 38, src/sass/styles.scss */
 .contact-container div {
   text-align: center;
   margin-top: 15px;
 }
 
-/* line 40, src/sass/styles.scss */
+/* line 43, src/sass/styles.scss */
 .contact-container .contact-btn {
   padding: 10px 20px;
   border: 1px solid #009bcd;
@@ -67,7 +69,7 @@ html {
   font-family: 'futuramedium';
 }
 
-/* line 51, src/sass/styles.scss */
+/* line 54, src/sass/styles.scss */
 .contact-container .contact-btn:hover {
   color: #fff;
   text-decoration: none;
@@ -75,25 +77,26 @@ html {
   box-shadow: 1px 1px 6px #121212;
 }
 
-/* line 60, src/sass/styles.scss */
+/* line 63, src/sass/styles.scss */
 section {
   min-height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+  -webkit-scroll-snap-coordinate: 0% 0%;
 }
 
-/* line 64, src/sass/styles.scss */
+/* line 68, src/sass/styles.scss */
 section.light {
   background-color: #009bcd;
   color: #002a47;
 }
 
-/* line 71, src/sass/styles.scss */
+/* line 75, src/sass/styles.scss */
 .scroll-link {
   text-align: center;
 }
 
-/* line 73, src/sass/styles.scss */
+/* line 77, src/sass/styles.scss */
 .scroll-link:after {
   content: '<';
   position: absolute;
@@ -102,13 +105,13 @@ section.light {
   transform: rotate(270deg);
 }
 
-/* line 83, src/sass/styles.scss */
+/* line 87, src/sass/styles.scss */
 .container-fluid {
   padding: 0;
   margin: auto;
 }
 
-/* line 88, src/sass/styles.scss */
+/* line 92, src/sass/styles.scss */
 .row {
   padding: 0;
   margin: 0;
