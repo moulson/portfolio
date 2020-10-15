@@ -10,6 +10,8 @@ body{
     overflow-x: hidden;
     background-color: $dark;
     color: $off-white;
+    -webkit-scroll-snap-type-y: mandatory;
+    scroll-snap-type-y: mandatory;
 }
 html{
     scroll-behavior: smooth;
@@ -21,6 +23,9 @@ html{
     font-family: 'futuramedium';
     text-align: center;
     padding: 200px 0 100px 0;
+    @media screen and (max-width: 768px){
+        padding: 100px 0 100px 0;
+    }
 }
 
 .header-sub{
