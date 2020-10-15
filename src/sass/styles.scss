@@ -10,8 +10,8 @@ body{
     overflow-x: hidden;
     background-color: $dark;
     color: $off-white;
-    -webkit-scroll-snap-type-y: mandatory;
-    scroll-snap-type-y: mandatory;
+    -webkit-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 }
 html{
     scroll-behavior: smooth;
