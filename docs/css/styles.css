@@ -76,7 +76,7 @@ html {
 
 /* line 59, src/sass/styles.scss */
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
 }
@@ -99,4 +99,16 @@ section.light {
   bottom: -20px;
   left: 50%;
   transform: rotate(270deg);
+}
+
+/* line 82, src/sass/styles.scss */
+.container-fluid {
+  padding: 0;
+  margin: auto;
+}
+
+/* line 87, src/sass/styles.scss */
+.row {
+  padding: 0;
+  margin: 0;
 }
