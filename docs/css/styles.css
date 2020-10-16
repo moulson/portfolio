@@ -1,4 +1,10 @@
 /*! jmpr-site v1.0.0 | (c) 2020  | ISC License | git+https://github.com/moulson/jmpr-site.git */
+/* blues
+$primary: rgb(0, 42, 71);
+$secondary: rgb(0, 155, 205);
+$dark: #00171F;
+$off-white: rgb(167, 137, 94);
+*/
 @font-face {
   font-family: "Venti Extra Bold";
   src: url("/fonts/VentiCF-ExtraBold.woff2");
@@ -17,8 +23,8 @@ body {
   margin: auto;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #00171F;
-  color: #d1cdc7;
+  background-color: #222435;
+  color: #d3dfe4;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
 }
@@ -71,12 +77,12 @@ html {
 /* line 53, src/sass/styles.scss */
 .contact-btn {
   padding: 7px 0px;
-  border: 1px solid #009bcd;
+  border: 1px solid #465062;
   border-radius: 100px;
   width: 100%;
   display: inline-block;
-  background-color: #002a47;
-  color: #d1cdc7;
+  background-color: #ae0321;
+  color: #d3dfe4;
   transition: all 0.3s;
   font-family: 'futuramedium';
   font-size: 1rem;
@@ -85,9 +91,9 @@ html {
 
 /* line 66, src/sass/styles.scss */
 .contact-btn:hover {
-  color: #d1cdc7;
+  color: #d3dfe4;
   text-decoration: none;
-  background-color: #00487a;
+  background-color: #e0042b;
   box-shadow: 1px 1px 6px #121212;
 }
 
@@ -102,8 +108,8 @@ section {
 
 /* line 81, src/sass/styles.scss */
 section.light {
-  background-color: #009bcd;
-  color: #002a47;
+  background-color: #465062;
+  color: #d3dfe4;
 }
 
 /* line 88, src/sass/styles.scss */
@@ -161,7 +167,7 @@ section.light {
   bottom: 25px;
   transform: rotate(135deg);
   vertical-align: baseline;
-  border-color: #d1cdc7;
+  border-color: #d3dfe4;
 }
 
 /* line 140, src/sass/styles.scss */
@@ -172,8 +178,8 @@ section.light {
 /* line 142, src/sass/styles.scss */
 .progress .progress-bar {
   margin: 0;
-  background-color: #002a47;
-  color: #d1cdc7;
+  background-color: #ae0321;
+  color: #d3dfe4;
 }
 
 /* line 146, src/sass/styles.scss */
@@ -185,16 +191,22 @@ section.light {
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #009bcd;
+  background-color: #465062;
 }
 
-/* line 160, src/sass/styles.scss */
+/* line 163, src/sass/styles.scss */
 .card.dark {
-  background-color: #002a47;
-  color: #d1cdc7;
+  background-color: #222435;
+  color: #d3dfe4;
 }
 
-/* line 165, src/sass/styles.scss */
+/* line 166, src/sass/styles.scss */
+.card.dark a.contact-btn {
+  background-color: #465062;
+  border-color: #7c0217;
+}
+
+/* line 172, src/sass/styles.scss */
 .card p.card-text {
   height: 120px;
 }

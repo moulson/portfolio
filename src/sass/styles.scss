@@ -81,7 +81,7 @@ section{
     &.light{
 
         background-color: $secondary;
-        color: $primary;
+        color: $off-white;
     }
 }
 
@@ -157,9 +157,16 @@ section{
     margin-bottom: 20px;
     background-color: $secondary;
 
+    .card-title{
+    }
+
     &.dark{
-        background-color: $primary;
+        background-color: $dark;
         color: $off-white;
+        a.contact-btn{
+            background-color: $secondary;
+            border-color: darken($primary, 10);
+        }
     }
 
     p.card-text{
