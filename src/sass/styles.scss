@@ -10,13 +10,9 @@ body{
     overflow-x: hidden;
     background-color: $dark;
     color: $off-white;
-    //-webkit-scroll-snap-type: y proximity;
-    //scroll-snap-type: y proximity;
 }
 html{
     scroll-behavior: smooth;
-    -webkit-scroll-snap-type: proximity;
-    scroll-snap-type: y proximity;
 }
 
 .wrapper{
@@ -27,7 +23,7 @@ html{
 .page-header{
     font-family: 'futuramedium';
     text-align: center;
-    padding: 120px 0 20px 0;
+    padding: 50px 0 20px 0;
     @media screen and (max-width: 768px){
         padding: 50px 0 20px 0;
     }
@@ -47,7 +43,11 @@ html{
 
 .header-sub{
     text-align: center;
-    font-family: 'futuramedium'
+    font-family: 'futuramedium';
+    p{
+        font-size: 1.2rem;
+        margin: 20px auto;
+    }
 }
 
 .contact-container{

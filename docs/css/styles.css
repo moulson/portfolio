@@ -27,34 +27,32 @@ body {
   color: #d3dfe4;
 }
 
-/* line 16, src/sass/styles.scss */
+/* line 14, src/sass/styles.scss */
 html {
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
 }
 
-/* line 22, src/sass/styles.scss */
+/* line 18, src/sass/styles.scss */
 .wrapper {
   max-width: 1080px;
   margin: auto;
 }
 
-/* line 27, src/sass/styles.scss */
+/* line 23, src/sass/styles.scss */
 .page-header {
   font-family: 'futuramedium';
   text-align: center;
-  padding: 120px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 27, src/sass/styles.scss */
+  /* line 23, src/sass/styles.scss */
   .page-header {
     padding: 50px 0 20px 0;
   }
 }
 
-/* line 35, src/sass/styles.scss */
+/* line 31, src/sass/styles.scss */
 .page-header.underline:after {
   content: '';
   border-bottom: 2px solid #ae0321;
@@ -65,10 +63,16 @@ html {
   display: block;
 }
 
-/* line 48, src/sass/styles.scss */
+/* line 44, src/sass/styles.scss */
 .header-sub {
   text-align: center;
   font-family: 'futuramedium';
+}
+
+/* line 47, src/sass/styles.scss */
+.header-sub p {
+  font-size: 1.2rem;
+  margin: 20px auto;
 }
 
 /* line 53, src/sass/styles.scss */
