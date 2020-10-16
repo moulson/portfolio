@@ -192,19 +192,13 @@ section.light {
   background-color: #465062;
 }
 
-/* line 163, src/sass/styles.scss */
+/* line 160, src/sass/styles.scss */
 .card.dark {
   background-color: #222435;
   color: #d3dfe4;
 }
 
-/* line 166, src/sass/styles.scss */
-.card.dark a.contact-btn {
-  background-color: #465062;
-  border-color: #7c0217;
-}
-
-/* line 172, src/sass/styles.scss */
+/* line 165, src/sass/styles.scss */
 .card p.card-text {
-  height: 120px;
+  height: 200px;
 }

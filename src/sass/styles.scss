@@ -157,19 +157,12 @@ section{
     margin-bottom: 20px;
     background-color: $secondary;
 
-    .card-title{
-    }
-
     &.dark{
         background-color: $dark;
         color: $off-white;
-        a.contact-btn{
-            background-color: $secondary;
-            border-color: darken($primary, 10);
-        }
     }
 
     p.card-text{
-        height: 120px;
+        height: 200px;
     }
 }
