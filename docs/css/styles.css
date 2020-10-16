@@ -32,13 +32,21 @@ html {
   scroll-behavior: smooth;
 }
 
-/* line 18, src/sass/styles.scss */
+@media screen and (min-width: 1200px) {
+  /* line 14, src/sass/styles.scss */
+  html {
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
+  }
+}
+
+/* line 21, src/sass/styles.scss */
 .wrapper {
   max-width: 1080px;
   margin: auto;
 }
 
-/* line 23, src/sass/styles.scss */
+/* line 26, src/sass/styles.scss */
 .page-header {
   font-family: 'futuramedium';
   text-align: center;
@@ -46,13 +54,13 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 23, src/sass/styles.scss */
+  /* line 26, src/sass/styles.scss */
   .page-header {
     padding: 50px 0 20px 0;
   }
 }
 
-/* line 31, src/sass/styles.scss */
+/* line 34, src/sass/styles.scss */
 .page-header.underline:after {
   content: '';
   border-bottom: 2px solid #ae0321;
@@ -63,31 +71,38 @@ html {
   display: block;
 }
 
-/* line 44, src/sass/styles.scss */
+/* line 47, src/sass/styles.scss */
+h2.header-sub {
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 52, src/sass/styles.scss */
 .header-sub {
   text-align: center;
   font-family: 'futuramedium';
 }
 
-/* line 47, src/sass/styles.scss */
+/* line 57, src/sass/styles.scss */
 .header-sub p {
   font-size: 1.2rem;
   margin: 20px auto;
 }
 
-/* line 53, src/sass/styles.scss */
+/* line 63, src/sass/styles.scss */
 .contact-container {
   max-width: 1330px;
   margin: 50px auto;
 }
 
-/* line 57, src/sass/styles.scss */
+/* line 67, src/sass/styles.scss */
 .contact-container div {
   text-align: center;
   margin-top: 15px;
 }
 
-/* line 65, src/sass/styles.scss */
+/* line 75, src/sass/styles.scss */
 .contact-btn {
   padding: 7px 0px;
   border: 1px solid #465062;
@@ -102,7 +117,7 @@ html {
   text-align: center;
 }
 
-/* line 78, src/sass/styles.scss */
+/* line 88, src/sass/styles.scss */
 .contact-btn:hover {
   color: #d3dfe4;
   text-decoration: none;
@@ -110,7 +125,7 @@ html {
   box-shadow: 1px 1px 6px #121212;
 }
 
-/* line 86, src/sass/styles.scss */
+/* line 96, src/sass/styles.scss */
 section {
   min-height: 100vh;
   width: 100%;
@@ -119,18 +134,18 @@ section {
   scroll-snap-align: start;
 }
 
-/* line 93, src/sass/styles.scss */
+/* line 103, src/sass/styles.scss */
 section.light {
   background-color: #465062;
   color: #d3dfe4;
 }
 
-/* line 100, src/sass/styles.scss */
+/* line 110, src/sass/styles.scss */
 .scroll-link {
   text-align: center;
 }
 
-/* line 102, src/sass/styles.scss */
+/* line 112, src/sass/styles.scss */
 .scroll-link:after {
   content: '<';
   position: absolute;
@@ -139,7 +154,7 @@ section.light {
   transform: rotate(270deg);
 }
 
-/* line 112, src/sass/styles.scss */
+/* line 122, src/sass/styles.scss */
 .container-fluid {
   padding: 0;
   margin: auto;
@@ -149,25 +164,25 @@ section.light {
   left: 0;
 }
 
-/* line 121, src/sass/styles.scss */
+/* line 131, src/sass/styles.scss */
 .row {
   padding: 0;
   margin: 0;
 }
 
-/* line 126, src/sass/styles.scss */
+/* line 136, src/sass/styles.scss */
 .me-container {
   width: 150px;
   margin: 20px auto;
 }
 
-/* line 129, src/sass/styles.scss */
+/* line 139, src/sass/styles.scss */
 .me-container img {
   width: 100%;
   height: auto;
 }
 
-/* line 136, src/sass/styles.scss */
+/* line 146, src/sass/styles.scss */
 .chevron:before {
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
@@ -183,58 +198,82 @@ section.light {
   border-color: #d3dfe4;
 }
 
-/* line 152, src/sass/styles.scss */
+/* line 162, src/sass/styles.scss */
 .progress {
-  height: 25px;
+  height: 30px;
+  margin: 10px 0;
+  background-color: #e9ecef;
 }
 
-/* line 154, src/sass/styles.scss */
+/* line 166, src/sass/styles.scss */
 .progress .progress-bar {
   margin: 0;
   background-color: #ae0321;
   color: #d3dfe4;
+  font-size: 1rem;
+  font-family: 'futuramedium';
 }
 
-/* line 158, src/sass/styles.scss */
+/* line 172, src/sass/styles.scss */
 .progress .progress-bar.ruby {
-  width: 90%;
+  width: 100%;
 }
 
-/* line 169, src/sass/styles.scss */
+/* line 175, src/sass/styles.scss */
+.progress .progress-bar.cs {
+  width: 100%;
+}
+
+/* line 178, src/sass/styles.scss */
+.progress .progress-bar.html {
+  width: 95%;
+}
+
+/* line 181, src/sass/styles.scss */
+.progress .progress-bar.js {
+  width: 80%;
+}
+
+/* line 184, src/sass/styles.scss */
+.progress .progress-bar.php {
+  width: 60%;
+}
+
+/* line 195, src/sass/styles.scss */
 .packages-container .card-text {
   height: 17em;
 }
 
-/* line 175, src/sass/styles.scss */
+/* line 201, src/sass/styles.scss */
 .services-container .card-text {
   height: 10em;
 }
 
-/* line 179, src/sass/styles.scss */
+/* line 205, src/sass/styles.scss */
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #465062;
 }
 
-/* line 184, src/sass/styles.scss */
+/* line 210, src/sass/styles.scss */
 .card .card-title {
   height: 2rem;
   text-align: center;
 }
 
-/* line 190, src/sass/styles.scss */
+/* line 216, src/sass/styles.scss */
 .card.dark {
   background-color: #222435;
   color: #d3dfe4;
 }
 
-/* line 198, src/sass/styles.scss */
+/* line 224, src/sass/styles.scss */
 .card .card-text li {
   list-style: none;
 }
 
-/* line 201, src/sass/styles.scss */
+/* line 227, src/sass/styles.scss */
 .card .card-text li.y:before {
   content: '';
   display: inline-block;
@@ -246,7 +285,7 @@ section.light {
   margin-right: 5px;
 }
 
-/* line 214, src/sass/styles.scss */
+/* line 240, src/sass/styles.scss */
 .card .card-text li.n:before {
   content: 'X';
   font-family: 'futuramedium';

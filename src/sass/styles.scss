@@ -13,6 +13,9 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    @media screen and (min-width: 1200px){
+        scroll-snap-type: y proximity;
+    }
 }
 
 .wrapper{
@@ -41,9 +44,16 @@ html{
     
 }
 
+h2.header-sub{
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .header-sub{
     text-align: center;
     font-family: 'futuramedium';
+
+
     p{
         font-size: 1.2rem;
         margin: 20px auto;
@@ -150,13 +160,29 @@ section{
 }
 
 .progress{
-    height: 25px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #e9ecef;
     .progress-bar{
         margin: 0;
         background-color: $primary;
         color: $off-white;
+        font-size: 1rem;
+        font-family: 'futuramedium';
         &.ruby{
-            width: 90%;
+            width: 100%;
+        }
+        &.cs{
+            width: 100%;
+        }
+        &.html{
+            width: 95%;
+        }
+        &.js{
+            width: 80%;
+        }
+        &.php{
+            width: 60%;
         }
     }
 }
