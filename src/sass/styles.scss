@@ -20,7 +20,7 @@ html{
 }
 
 .wrapper{
-    max-width: 1300px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -31,6 +31,18 @@ html{
     @media screen and (max-width: 768px){
         padding: 50px 0 20px 0;
     }
+    &.underline{
+        &:after{
+            content: '';
+            border-bottom: 2px solid $primary;
+            width: 250px;
+            height: 10px;
+            position: relative;
+            left: calc(50% - 125px);
+            display: block;
+        }
+    }
+    
 }
 
 .header-sub{
@@ -152,6 +164,18 @@ section{
 
 
 //cards
+
+.packages-container{
+    .card-text{
+        height: 17em;
+    }
+}
+
+.services-container{
+    .card-text{
+        height: 10em;
+    }
+}
 .card{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -160,6 +184,7 @@ section{
     .card-title{
         //Should always be 2 lines high unless titles get long
         height: 2rem;
+        text-align: center;
     }
 
     &.dark{
@@ -167,7 +192,37 @@ section{
         color: $off-white;
     }
 
-    p.card-text{
-        height: 10em;
+    
+
+    .card-text{
+        li{
+            list-style: none;
+            &.y{
+                &:before{
+                    content: '';
+                    display: inline-block;
+                    height: 11px;
+                    width: 20px;
+                    border-left: 3px solid green;
+                    border-bottom: 3px solid green;
+                    transform: rotate(315deg);
+                    margin-right: 5px;
+                }
+            }
+
+            &.n{
+                &:before{
+                    content: 'X';
+                    font-family: 'futuramedium';
+                    color: $primary;
+                    display: inline-block;
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 5px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

@@ -36,7 +36,7 @@ html {
 
 /* line 22, src/sass/styles.scss */
 .wrapper {
-  max-width: 1300px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -54,25 +54,36 @@ html {
   }
 }
 
-/* line 36, src/sass/styles.scss */
+/* line 35, src/sass/styles.scss */
+.page-header.underline:after {
+  content: '';
+  border-bottom: 2px solid #ae0321;
+  width: 250px;
+  height: 10px;
+  position: relative;
+  left: calc(50% - 125px);
+  display: block;
+}
+
+/* line 48, src/sass/styles.scss */
 .header-sub {
   text-align: center;
   font-family: 'futuramedium';
 }
 
-/* line 41, src/sass/styles.scss */
+/* line 53, src/sass/styles.scss */
 .contact-container {
   max-width: 1330px;
   margin: 50px auto;
 }
 
-/* line 45, src/sass/styles.scss */
+/* line 57, src/sass/styles.scss */
 .contact-container div {
   text-align: center;
   margin-top: 15px;
 }
 
-/* line 53, src/sass/styles.scss */
+/* line 65, src/sass/styles.scss */
 .contact-btn {
   padding: 7px 0px;
   border: 1px solid #465062;
@@ -87,7 +98,7 @@ html {
   text-align: center;
 }
 
-/* line 66, src/sass/styles.scss */
+/* line 78, src/sass/styles.scss */
 .contact-btn:hover {
   color: #d3dfe4;
   text-decoration: none;
@@ -95,7 +106,7 @@ html {
   box-shadow: 1px 1px 6px #121212;
 }
 
-/* line 74, src/sass/styles.scss */
+/* line 86, src/sass/styles.scss */
 section {
   min-height: 100vh;
   width: 100%;
@@ -104,18 +115,18 @@ section {
   scroll-snap-align: start;
 }
 
-/* line 81, src/sass/styles.scss */
+/* line 93, src/sass/styles.scss */
 section.light {
   background-color: #465062;
   color: #d3dfe4;
 }
 
-/* line 88, src/sass/styles.scss */
+/* line 100, src/sass/styles.scss */
 .scroll-link {
   text-align: center;
 }
 
-/* line 90, src/sass/styles.scss */
+/* line 102, src/sass/styles.scss */
 .scroll-link:after {
   content: '<';
   position: absolute;
@@ -124,7 +135,7 @@ section.light {
   transform: rotate(270deg);
 }
 
-/* line 100, src/sass/styles.scss */
+/* line 112, src/sass/styles.scss */
 .container-fluid {
   padding: 0;
   margin: auto;
@@ -134,25 +145,25 @@ section.light {
   left: 0;
 }
 
-/* line 109, src/sass/styles.scss */
+/* line 121, src/sass/styles.scss */
 .row {
   padding: 0;
   margin: 0;
 }
 
-/* line 114, src/sass/styles.scss */
+/* line 126, src/sass/styles.scss */
 .me-container {
   width: 150px;
   margin: 20px auto;
 }
 
-/* line 117, src/sass/styles.scss */
+/* line 129, src/sass/styles.scss */
 .me-container img {
   width: 100%;
   height: auto;
 }
 
-/* line 124, src/sass/styles.scss */
+/* line 136, src/sass/styles.scss */
 .chevron:before {
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
@@ -168,42 +179,78 @@ section.light {
   border-color: #d3dfe4;
 }
 
-/* line 140, src/sass/styles.scss */
+/* line 152, src/sass/styles.scss */
 .progress {
   height: 25px;
 }
 
-/* line 142, src/sass/styles.scss */
+/* line 154, src/sass/styles.scss */
 .progress .progress-bar {
   margin: 0;
   background-color: #ae0321;
   color: #d3dfe4;
 }
 
-/* line 146, src/sass/styles.scss */
+/* line 158, src/sass/styles.scss */
 .progress .progress-bar.ruby {
   width: 90%;
 }
 
-/* line 155, src/sass/styles.scss */
+/* line 169, src/sass/styles.scss */
+.packages-container .card-text {
+  height: 17em;
+}
+
+/* line 175, src/sass/styles.scss */
+.services-container .card-text {
+  height: 10em;
+}
+
+/* line 179, src/sass/styles.scss */
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #465062;
 }
 
-/* line 160, src/sass/styles.scss */
+/* line 184, src/sass/styles.scss */
 .card .card-title {
   height: 2rem;
+  text-align: center;
 }
 
-/* line 165, src/sass/styles.scss */
+/* line 190, src/sass/styles.scss */
 .card.dark {
   background-color: #222435;
   color: #d3dfe4;
 }
 
-/* line 170, src/sass/styles.scss */
-.card p.card-text {
-  height: 10em;
+/* line 198, src/sass/styles.scss */
+.card .card-text li {
+  list-style: none;
+}
+
+/* line 201, src/sass/styles.scss */
+.card .card-text li.y:before {
+  content: '';
+  display: inline-block;
+  height: 11px;
+  width: 20px;
+  border-left: 3px solid green;
+  border-bottom: 3px solid green;
+  transform: rotate(315deg);
+  margin-right: 5px;
+}
+
+/* line 214, src/sass/styles.scss */
+.card .card-text li.n:before {
+  content: 'X';
+  font-family: 'futuramedium';
+  color: #ae0321;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  font-size: 20px;
+  text-align: center;
 }
