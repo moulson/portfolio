@@ -19,91 +19,99 @@ body {
   overflow-x: hidden;
   background-color: #00171F;
   color: #d1cdc7;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
 }
 
 /* line 16, src/sass/styles.scss */
 html {
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
 }
 
 /* line 22, src/sass/styles.scss */
+.wrapper {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* line 27, src/sass/styles.scss */
 .page-header {
   font-family: 'futuramedium';
   text-align: center;
-  padding: 200px 0 20px 0;
+  padding: 120px 0 20px 0;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 22, src/sass/styles.scss */
+  /* line 27, src/sass/styles.scss */
   .page-header {
     padding: 50px 0 20px 0;
   }
 }
 
-/* line 31, src/sass/styles.scss */
+/* line 36, src/sass/styles.scss */
 .header-sub {
   text-align: center;
   font-family: 'futuramedium';
 }
 
-/* line 36, src/sass/styles.scss */
+/* line 41, src/sass/styles.scss */
 .contact-container {
   max-width: 1330px;
   margin: 50px auto;
 }
 
-/* line 40, src/sass/styles.scss */
+/* line 45, src/sass/styles.scss */
 .contact-container div {
   text-align: center;
   margin-top: 15px;
 }
 
-/* line 45, src/sass/styles.scss */
-.contact-container .contact-btn {
-  padding: 10px 20px;
+/* line 53, src/sass/styles.scss */
+.contact-btn {
+  padding: 7px 0px;
   border: 1px solid #009bcd;
   border-radius: 100px;
-  width: 250px;
+  width: 100%;
   display: inline-block;
   background-color: #002a47;
-  color: #009bcd;
+  color: #d1cdc7;
   transition: all 0.3s;
   font-family: 'futuramedium';
+  font-size: 1rem;
+  text-align: center;
 }
 
-/* line 56, src/sass/styles.scss */
-.contact-container .contact-btn:hover {
-  color: #fff;
+/* line 66, src/sass/styles.scss */
+.contact-btn:hover {
+  color: #d1cdc7;
   text-decoration: none;
   background-color: #00487a;
   box-shadow: 1px 1px 6px #121212;
 }
 
-/* line 65, src/sass/styles.scss */
+/* line 74, src/sass/styles.scss */
 section {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   -ms-scroll-snap-coordinate: 0% 0%;
       scroll-snap-coordinate: 0% 0%;
   scroll-snap-align: start;
 }
 
-/* line 72, src/sass/styles.scss */
+/* line 81, src/sass/styles.scss */
 section.light {
   background-color: #009bcd;
   color: #002a47;
 }
 
-/* line 79, src/sass/styles.scss */
+/* line 88, src/sass/styles.scss */
 .scroll-link {
   text-align: center;
 }
 
-/* line 81, src/sass/styles.scss */
+/* line 90, src/sass/styles.scss */
 .scroll-link:after {
   content: '<';
   position: absolute;
@@ -112,31 +120,35 @@ section.light {
   transform: rotate(270deg);
 }
 
-/* line 91, src/sass/styles.scss */
+/* line 100, src/sass/styles.scss */
 .container-fluid {
   padding: 0;
   margin: auto;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
-/* line 96, src/sass/styles.scss */
+/* line 109, src/sass/styles.scss */
 .row {
   padding: 0;
   margin: 0;
 }
 
-/* line 101, src/sass/styles.scss */
+/* line 114, src/sass/styles.scss */
 .me-container {
   width: 150px;
   margin: 20px auto;
 }
 
-/* line 104, src/sass/styles.scss */
+/* line 117, src/sass/styles.scss */
 .me-container img {
   width: 100%;
   height: auto;
 }
 
-/* line 111, src/sass/styles.scss */
+/* line 124, src/sass/styles.scss */
 .chevron:before {
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
@@ -150,4 +162,39 @@ section.light {
   transform: rotate(135deg);
   vertical-align: baseline;
   border-color: #d1cdc7;
+}
+
+/* line 140, src/sass/styles.scss */
+.progress {
+  height: 25px;
+}
+
+/* line 142, src/sass/styles.scss */
+.progress .progress-bar {
+  margin: 0;
+  background-color: #002a47;
+  color: #d1cdc7;
+}
+
+/* line 146, src/sass/styles.scss */
+.progress .progress-bar.ruby {
+  width: 90%;
+}
+
+/* line 155, src/sass/styles.scss */
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #009bcd;
+}
+
+/* line 160, src/sass/styles.scss */
+.card.dark {
+  background-color: #002a47;
+  color: #d1cdc7;
+}
+
+/* line 165, src/sass/styles.scss */
+.card p.card-text {
+  height: 120px;
 }
