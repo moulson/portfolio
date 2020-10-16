@@ -193,12 +193,17 @@ section.light {
 }
 
 /* line 160, src/sass/styles.scss */
+.card .card-title {
+  height: 2rem;
+}
+
+/* line 165, src/sass/styles.scss */
 .card.dark {
   background-color: #222435;
   color: #d3dfe4;
 }
 
-/* line 165, src/sass/styles.scss */
+/* line 170, src/sass/styles.scss */
 .card p.card-text {
-  height: 200px;
+  height: 10em;
 }

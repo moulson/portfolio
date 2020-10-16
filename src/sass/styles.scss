@@ -157,12 +157,17 @@ section{
     margin-bottom: 20px;
     background-color: $secondary;
 
+    .card-title{
+        //Should always be 2 lines high unless titles get long
+        height: 2rem;
+    }
+
     &.dark{
         background-color: $dark;
         color: $off-white;
     }
 
     p.card-text{
-        height: 200px;
+        height: 10em;
     }
 }
