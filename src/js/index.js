@@ -4,7 +4,19 @@ $(function(){
 });
 
 function scroller(el){
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $('#skills').offset().top
-    }, 200);
+    
 }
+
+$(function(){
+    $('#skill-btn').click(function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#skills').offset().top
+        }, 200);
+    });
+
+    $('#packages-btn').click(function(){
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#packages').offset().top
+        }, 200);
+    });
+});
