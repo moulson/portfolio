@@ -88,21 +88,23 @@ h2.header-sub {
 .header-sub p {
   font-size: 1.2rem;
   margin: 20px auto;
+  text-align: justify;
+  padding: 0 3%;
 }
 
-/* line 63, src/sass/styles.scss */
+/* line 65, src/sass/styles.scss */
 .contact-container {
   max-width: 1330px;
   margin: 50px auto;
 }
 
-/* line 67, src/sass/styles.scss */
+/* line 69, src/sass/styles.scss */
 .contact-container div {
   text-align: center;
   margin-top: 15px;
 }
 
-/* line 75, src/sass/styles.scss */
+/* line 77, src/sass/styles.scss */
 .contact-btn {
   padding: 7px 0px;
   border: 1px solid #465062;
@@ -117,7 +119,7 @@ h2.header-sub {
   text-align: center;
 }
 
-/* line 88, src/sass/styles.scss */
+/* line 90, src/sass/styles.scss */
 .contact-btn:hover {
   color: #d3dfe4;
   text-decoration: none;
@@ -125,7 +127,7 @@ h2.header-sub {
   box-shadow: 1px 1px 6px #121212;
 }
 
-/* line 96, src/sass/styles.scss */
+/* line 98, src/sass/styles.scss */
 section {
   min-height: 100vh;
   width: 100%;
@@ -134,18 +136,18 @@ section {
   scroll-snap-align: start;
 }
 
-/* line 103, src/sass/styles.scss */
+/* line 105, src/sass/styles.scss */
 section.light {
   background-color: #465062;
   color: #d3dfe4;
 }
 
-/* line 110, src/sass/styles.scss */
+/* line 112, src/sass/styles.scss */
 .scroll-link {
   text-align: center;
 }
 
-/* line 112, src/sass/styles.scss */
+/* line 114, src/sass/styles.scss */
 .scroll-link:after {
   content: '<';
   position: absolute;
@@ -154,7 +156,7 @@ section.light {
   transform: rotate(270deg);
 }
 
-/* line 122, src/sass/styles.scss */
+/* line 124, src/sass/styles.scss */
 .container-fluid {
   padding: 0;
   margin: auto;
@@ -164,25 +166,25 @@ section.light {
   left: 0;
 }
 
-/* line 131, src/sass/styles.scss */
+/* line 133, src/sass/styles.scss */
 .row {
   padding: 0;
   margin: 0;
 }
 
-/* line 136, src/sass/styles.scss */
+/* line 138, src/sass/styles.scss */
 .me-container {
   width: 150px;
   margin: 20px auto;
 }
 
-/* line 139, src/sass/styles.scss */
+/* line 141, src/sass/styles.scss */
 .me-container img {
   width: 100%;
   height: auto;
 }
 
-/* line 146, src/sass/styles.scss */
+/* line 148, src/sass/styles.scss */
 .chevron:before {
   border-style: solid;
   border-width: 0.25em 0.25em 0 0;
@@ -198,14 +200,14 @@ section.light {
   border-color: #d3dfe4;
 }
 
-/* line 162, src/sass/styles.scss */
+/* line 164, src/sass/styles.scss */
 .progress {
   height: 30px;
   margin: 10px 0;
   background-color: #e9ecef;
 }
 
-/* line 166, src/sass/styles.scss */
+/* line 168, src/sass/styles.scss */
 .progress .progress-bar {
   margin: 0;
   background-color: #ae0321;
@@ -214,66 +216,71 @@ section.light {
   font-family: 'futuramedium';
 }
 
-/* line 172, src/sass/styles.scss */
+/* line 174, src/sass/styles.scss */
 .progress .progress-bar.ruby {
   width: 100%;
 }
 
-/* line 175, src/sass/styles.scss */
+/* line 177, src/sass/styles.scss */
 .progress .progress-bar.cs {
   width: 100%;
 }
 
-/* line 178, src/sass/styles.scss */
+/* line 180, src/sass/styles.scss */
 .progress .progress-bar.html {
   width: 95%;
 }
 
-/* line 181, src/sass/styles.scss */
+/* line 183, src/sass/styles.scss */
 .progress .progress-bar.js {
   width: 80%;
 }
 
-/* line 184, src/sass/styles.scss */
+/* line 186, src/sass/styles.scss */
 .progress .progress-bar.php {
   width: 60%;
 }
 
-/* line 195, src/sass/styles.scss */
+/* line 197, src/sass/styles.scss */
 .packages-container .card-text {
   height: 17em;
-}
-
-/* line 201, src/sass/styles.scss */
-.services-container .card-text {
-  height: 10em;
+  font-size: 1.2rem;
+  font-family: 'futuramedium';
 }
 
 /* line 205, src/sass/styles.scss */
+.services-container .card-text {
+  height: 10em;
+  font-size: 1.2rem;
+  font-family: 'futuramedium';
+}
+
+/* line 211, src/sass/styles.scss */
 .card {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #465062;
 }
 
-/* line 210, src/sass/styles.scss */
+/* line 216, src/sass/styles.scss */
 .card .card-title {
-  height: 2rem;
+  height: 2.8rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
-/* line 216, src/sass/styles.scss */
+/* line 223, src/sass/styles.scss */
 .card.dark {
   background-color: #222435;
   color: #d3dfe4;
 }
 
-/* line 224, src/sass/styles.scss */
+/* line 231, src/sass/styles.scss */
 .card .card-text li {
   list-style: none;
 }
 
-/* line 227, src/sass/styles.scss */
+/* line 234, src/sass/styles.scss */
 .card .card-text li.y:before {
   content: '';
   display: inline-block;
@@ -285,7 +292,7 @@ section.light {
   margin-right: 5px;
 }
 
-/* line 240, src/sass/styles.scss */
+/* line 247, src/sass/styles.scss */
 .card .card-text li.n:before {
   content: 'X';
   font-family: 'futuramedium';
