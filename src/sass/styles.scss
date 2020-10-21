@@ -57,6 +57,8 @@ h2.header-sub{
     p{
         font-size: 1.2rem;
         margin: 20px auto;
+        text-align: justify;
+        padding: 0 3%;
     }
 }
 
@@ -194,12 +196,16 @@ section{
 .packages-container{
     .card-text{
         height: 17em;
+        font-size: 1.2rem;
+        font-family: 'futuramedium';
     }
 }
 
 .services-container{
     .card-text{
         height: 10em;
+        font-size: 1.2rem;
+        font-family: 'futuramedium';
     }
 }
 .card{
@@ -209,7 +215,8 @@ section{
 
     .card-title{
         //Should always be 2 lines high unless titles get long
-        height: 2rem;
+        height: 2.8rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
