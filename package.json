@@ -1,5 +1,5 @@
 {
-  "name": "jmpr-site",
+  "name": "danmoulson.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moulson/jmpr-site.git"
+    "url": "git+https://github.com/moulson/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moulson/jmpr-site/issues"
+    "url": "https://github.com/moulson/portfolio/issues"
   },
-  "homepage": "https://github.com/moulson/jmpr-site#readme",
+  "homepage": "https://danmoulson.com",
   "devDependencies": {
     "autoprefixer": "9.6.1",
     "browser-sync": "^2.26.13",
