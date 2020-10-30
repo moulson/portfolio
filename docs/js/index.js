@@ -1,17 +1,13 @@
-/*! jmpr-site v1.0.0 | (c) 2020  | ISC License | git+https://github.com/moulson/jmpr-site.git */
+/*! danmoulson.com v1.0.0 | (c) 2020  | ISC License | git+https://github.com/moulson/portfolio.git */
 $((function(){
     $('#hi').css('opacity', 0).fadeTo("slow", 1);
     $('#asd').css('opacity', 0).delay(1000).fadeTo("slow",1);
 }));
 
 function scroller(el){
-<<<<<<< HEAD
     $([document.documentElement, document.body]).animate({
         scrollTop: $('#skills').offset().top
     }, 200);
-}
-=======
-    
 }
 
 $((function(){
@@ -27,4 +23,3 @@ $((function(){
         }, 200);
     }));
 }));
->>>>>>> 4161a36e8bd123ab67e4906fb48615bfdbdd366e
