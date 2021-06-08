@@ -259,3 +259,37 @@ section{
         }
     }
 }
+.hg1m .img-container, .crimson-cresties .img-container, .empirna .img-container{
+    text-align: center;
+    .card-title{
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.hg1m, .crimson-cresties, .empirna{
+    .card-text{
+        height: 10rem;
+    }
+}
+
+.centre{
+    text-align: center;
+}
+
+#contact{
+    .icon{
+        font-size: 5rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .contact-card{
+        margin-top: 40px;
+        text-align: center;
+        a{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

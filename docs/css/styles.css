@@ -1,4 +1,4 @@
-/*! danmoulson.com v1.0.0 | (c) 2020  | ISC License | git+https://github.com/moulson/portfolio.git */
+/*! danmoulson.com v1.0.0 | (c) 2021  | ISC License | git+https://github.com/moulson/portfolio.git */
 /* blues
 $primary: rgb(0, 42, 71);
 $secondary: rgb(0, 155, 205);
@@ -303,4 +303,45 @@ section.light {
   margin-right: 5px;
   font-size: 20px;
   text-align: center;
+}
+
+/* line 262, src/sass/styles.scss */
+.hg1m .img-container, .crimson-cresties .img-container, .empirna .img-container {
+  text-align: center;
+}
+
+/* line 264, src/sass/styles.scss */
+.hg1m .img-container .card-title, .crimson-cresties .img-container .card-title, .empirna .img-container .card-title {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* line 271, src/sass/styles.scss */
+.hg1m .card-text, .crimson-cresties .card-text, .empirna .card-text {
+  height: 10rem;
+}
+
+/* line 276, src/sass/styles.scss */
+.centre {
+  text-align: center;
+}
+
+/* line 281, src/sass/styles.scss */
+#contact .icon {
+  font-size: 5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 286, src/sass/styles.scss */
+#contact .contact-card {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* line 289, src/sass/styles.scss */
+#contact .contact-card a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
