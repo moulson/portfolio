@@ -312,7 +312,7 @@ section.light {
 
 /* line 264, src/sass/styles.scss */
 .hg1m .img-container .card-title, .crimson-cresties .img-container .card-title, .empirna .img-container .card-title {
-  height: 3rem;
+  height: unset;
   margin-bottom: 2rem;
 }
 
