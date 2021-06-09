@@ -5,6 +5,7 @@ $venti-extra-bold: 'Venti Extra Bold';
 @font-face{
     font-family: $venti-extra-bold;
     src: url('/fonts/VentiCF-ExtraBold.woff2');
+    font-display: swap;
 }
 
 @font-face {
@@ -13,5 +14,5 @@ $venti-extra-bold: 'Venti Extra Bold';
          url('/fonts/futura_medium_bt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
