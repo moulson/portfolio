@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Moulson Web Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-indigo-600">Dan Moulson</a>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#services" class="hover:text-indigo-600">Services</a>
+          </li>
+          <li>
+            <a href="#work" class="hover:text-indigo-600">Case Studies</a>
+          </li>
+          <li><a href="#pricing" class="hover:text-indigo-600">Pricing</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center"
+    >
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Web Design & Development<br /><span class="text-indigo-600"
+            >Fully Responsive & Bespoke</span
+          >
+        </h1>
+        <p class="text-lg mb-6">
+          I am a highly experienced Web Designer & Developer based in Harrogate,
+          England. I craft scalable CMS and e-commerce solutions tailored to
+          your business needs.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700"
+          >Get a Quote</a
+        >
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        <img
+          src="/path/to/profile.jpg"
+          alt="Dan Moulson"
+          class="w-48 h-48 rounded-full border-4 border-indigo-600"
+        />
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-white py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-2">
+              Web Design & Development
+            </h3>
+            <p class="mb-4">
+              Affordable, bespoke websites with CMS, e-commerce, and dynamic
+              content support.
+            </p>
+            <a href="#pricing" class="text-indigo-600 hover:underline"
+              >See Pricing & Options →</a
+            >
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-2">Hosting & Management</h3>
+            <p class="mb-4">
+              Reliable hosting from £7/month, with maintenance and updates on
+              request.
+            </p>
+            <a href="#services" class="text-indigo-600 hover:underline"
+              >Find out more →</a
+            >
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg shadow">
+            <h3 class="text-2xl font-semibold mb-2">Enterprise Solutions</h3>
+            <p class="mb-4">
+              Custom development beyond e-commerce. Free consultation for
+              complex requirements.
+            </p>
+            <a href="#contact" class="text-indigo-600 hover:underline"
+              >Get in Touch →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="work" class="container mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Case Studies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Example Card -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="/path/to/hg1m-logo.jpg"
+            alt="HG1M"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">HG1M</h3>
+            <p class="mb-4">
+              Fitness wear brand website with e-commerce functionality.
+            </p>
+            <a
+              href="https://www.hg1m.com"
+              class="text-indigo-600 hover:underline"
+              target="_blank"
+              >Visit Site →</a
+            >
+          </div>
+        </div>
+        <!-- Repeat for other projects -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="/path/to/crimsoncresties-logo.jpg"
+            alt="Crimson Cresties"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Crimson Cresties</h3>
+            <p class="mb-4">
+              E-commerce site for exotic crested gecko breeder.
+            </p>
+            <a
+              href="https://www.crimsoncresties.com"
+              class="text-indigo-600 hover:underline"
+              target="_blank"
+              >Visit Site →</a
+            >
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img
+            src="/path/to/empirna-logo.jpg"
+            alt="Empirna"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Empirna</h3>
+            <p class="mb-4">Online interior design retailer site launch.</p>
+            <a
+              href="https://www.empirna.com"
+              class="text-indigo-600 hover:underline"
+              target="_blank"
+              >Visit Site →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="bg-white py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Website Packages</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Starter -->
+          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
+            <h3 class="text-2xl font-semibold mb-4">Starter</h3>
+            <ul class="mb-6 text-left space-y-2">
+              <li>Domain name included</li>
+              <li>Free hosting & SSL</li>
+              <li>Unlimited pages</li>
+              <li>Dynamic content support</li>
+            </ul>
+            <a
+              href="#contact"
+              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
+              >Get in Touch</a
+            >
+          </div>
+          <!-- E-Commerce -->
+          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
+            <h3 class="text-2xl font-semibold mb-4">E-Commerce</h3>
+            <ul class="mb-6 text-left space-y-2">
+              <li>Domain & email</li>
+              <li>Free hosting & SSL</li>
+              <li>Unlimited pages</li>
+              <li>Payment gateways</li>
+            </ul>
+            <a
+              href="#contact"
+              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
+              >Get in Touch</a
+            >
+          </div>
+          <!-- Enterprise -->
+          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
+            <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+            <p class="mb-6">Custom solutions & free consultation.</p>
+            <a
+              href="#contact"
+              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow">
+        <form
+          action="mailto:dan@danmoulson.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium mb-1"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium mb-1"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border rounded px-3 py-2"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-1"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full border rounded px-3 py-2"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700"
+          >
+            Send Message
+          </button>
+        </form>
+        <div class="mt-6 text-center">
+          <p>
+            Email:
+            <a
+              href="mailto:dan@danmoulson.com"
+              class="text-indigo-600 hover:underline"
+              >dan@danmoulson.com</a
+            >
+          </p>
+          <p>
+            Phone:
+            <a href="tel:07878036930" class="text-indigo-600 hover:underline"
+              >07878 036930</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+      <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+        &copy; 2025 Dan Moulson. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
