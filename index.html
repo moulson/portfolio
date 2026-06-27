@@ -3,289 +3,389 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dan Moulson Web Solutions</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta
+      name="description"
+      content="Dan Moulson — freelance web designer and developer in Harrogate. Bespoke websites, e-commerce, hosting and ongoing support."
+    />
+    <meta property="og:title" content="Dan Moulson Web Solutions" />
+    <meta
+      property="og:description"
+      content="Bespoke web design and development for businesses across the UK."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danmoulson.com/" />
+    <title>Dan Moulson — Web Design &amp; Development</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
-  <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="/" class="logo" aria-label="Dan Moulson — home">
+          <span class="logo__mark" aria-hidden="true">DM</span>
+          <span>Dan Moulson</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="/cv.html">CV</a>
+          <a href="#contact" class="nav-cta">Get a quote</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open navigation menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
       <nav
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
+        id="mobile-nav"
+        class="nav-mobile"
+        data-mobile-nav
+        aria-label="Mobile navigation"
       >
-        <a href="#" class="text-2xl font-bold text-indigo-600">Dan Moulson</a>
-        <ul class="flex space-x-6">
-          <li>
-            <a href="#services" class="hover:text-indigo-600">Services</a>
-          </li>
-          <li>
-            <a href="#work" class="hover:text-indigo-600">Case Studies</a>
-          </li>
-          <li><a href="#pricing" class="hover:text-indigo-600">Pricing</a></li>
-          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-        </ul>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="/cv.html">CV</a>
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section
-      class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center"
-    >
-      <div class="md:w-1/2">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-          Web Design & Development<br /><span class="text-indigo-600"
-            >Fully Responsive & Bespoke</span
-          >
-        </h1>
-        <p class="text-lg mb-6">
-          I am a highly experienced Web Designer & Developer based in Harrogate,
-          England. I craft scalable CMS and e-commerce solutions tailored to
-          your business needs.
-        </p>
-        <a
-          href="#contact"
-          class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700"
-          >Get a Quote</a
-        >
-      </div>
-      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-        <img
-          src="/path/to/profile.jpg"
-          alt="Dan Moulson"
-          class="w-48 h-48 rounded-full border-4 border-indigo-600"
-        />
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="bg-white py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 class="text-2xl font-semibold mb-2">
-              Web Design & Development
-            </h3>
-            <p class="mb-4">
-              Affordable, bespoke websites with CMS, e-commerce, and dynamic
-              content support.
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <span class="hero__eyebrow">Harrogate, England</span>
+            <h1 class="hero__title">
+              Websites built with care,<br />
+              <em>designed to grow</em> with you
+            </h1>
+            <p class="hero__lead">
+              I'm Dan Moulson — a web designer and developer with over a decade
+              of experience building bespoke CMS and e-commerce sites for
+              businesses that need more than a template.
             </p>
-            <a href="#pricing" class="text-indigo-600 hover:underline"
-              >See Pricing & Options →</a
-            >
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Start a project</a>
+              <a href="#work" class="btn btn--secondary">View my work</a>
+            </div>
           </div>
-          <div class="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 class="text-2xl font-semibold mb-2">Hosting & Management</h3>
-            <p class="mb-4">
-              Reliable hosting from £7/month, with maintenance and updates on
-              request.
-            </p>
-            <a href="#services" class="text-indigo-600 hover:underline"
-              >Find out more →</a
-            >
-          </div>
-          <div class="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 class="text-2xl font-semibold mb-2">Enterprise Solutions</h3>
-            <p class="mb-4">
-              Custom development beyond e-commerce. Free consultation for
-              complex requirements.
-            </p>
-            <a href="#contact" class="text-indigo-600 hover:underline"
-              >Get in Touch →</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Case Studies -->
-    <section id="work" class="container mx-auto px-6 py-20">
-      <h2 class="text-3xl font-bold text-center mb-12">Case Studies</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Example Card -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img
-            src="/path/to/hg1m-logo.jpg"
-            alt="HG1M"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">HG1M</h3>
-            <p class="mb-4">
-              Fitness wear brand website with e-commerce functionality.
+          <div class="hero__visual" aria-hidden="true">
+            <div class="profile-card">
+              <span class="profile-card__initials">DM</span>
+              <div class="profile-card__label">
+                <div class="profile-card__name">Dan Moulson</div>
+                <div class="profile-card__role">Web Designer &amp; Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section section--alt">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <span class="section__eyebrow">What I do</span>
+            <h2 class="section__title">Everything your site needs</h2>
+            <p class="section__desc">
+              From first sketch to launch day and beyond — I handle the technical
+              work so you can focus on your business.
             </p>
-            <a
-              href="https://www.hg1m.com"
-              class="text-indigo-600 hover:underline"
-              target="_blank"
-              >Visit Site →</a
-            >
+          </header>
+
+          <div class="card-grid card-grid--3">
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18M9 21V9" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Web Design &amp; Development</h3>
+              <p class="service-card__text">
+                Fully responsive, bespoke websites with CMS integration,
+                e-commerce, and dynamic content — built around how your business
+                actually works.
+              </p>
+              <a href="#pricing" class="service-card__link">See packages →</a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Hosting &amp; Management</h3>
+              <p class="service-card__text">
+                Reliable hosting from £7/month with SSL, backups, and updates on
+                request. Your site stays fast, secure, and online.
+              </p>
+              <a href="#contact" class="service-card__link">Ask about hosting →</a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3 class="service-card__title">Enterprise Solutions</h3>
+              <p class="service-card__text">
+                Custom integrations, complex workflows, and systems beyond
+                standard e-commerce. Free consultation to scope your
+                requirements.
+              </p>
+              <a href="#contact" class="service-card__link">Book a consultation →</a>
+            </article>
           </div>
         </div>
-        <!-- Repeat for other projects -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img
-            src="/path/to/crimsoncresties-logo.jpg"
-            alt="Crimson Cresties"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Crimson Cresties</h3>
-            <p class="mb-4">
-              E-commerce site for exotic crested gecko breeder.
+      </section>
+
+      <section id="work" class="section">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <span class="section__eyebrow">Selected work</span>
+            <h2 class="section__title">Recent client projects</h2>
+            <p class="section__desc">
+              A few of the businesses I've helped get online and selling.
             </p>
-            <a
-              href="https://www.crimsoncresties.com"
-              class="text-indigo-600 hover:underline"
-              target="_blank"
-              >Visit Site →</a
-            >
-          </div>
-        </div>
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img
-            src="/path/to/empirna-logo.jpg"
-            alt="Empirna"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Empirna</h3>
-            <p class="mb-4">Online interior design retailer site launch.</p>
-            <a
-              href="https://www.empirna.com"
-              class="text-indigo-600 hover:underline"
-              target="_blank"
-              >Visit Site →</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+          </header>
 
-    <!-- Pricing -->
-    <section id="pricing" class="bg-white py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Website Packages</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Starter -->
-          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
-            <h3 class="text-2xl font-semibold mb-4">Starter</h3>
-            <ul class="mb-6 text-left space-y-2">
-              <li>Domain name included</li>
-              <li>Free hosting & SSL</li>
-              <li>Unlimited pages</li>
-              <li>Dynamic content support</li>
-            </ul>
-            <a
-              href="#contact"
-              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
-              >Get in Touch</a
-            >
-          </div>
-          <!-- E-Commerce -->
-          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
-            <h3 class="text-2xl font-semibold mb-4">E-Commerce</h3>
-            <ul class="mb-6 text-left space-y-2">
-              <li>Domain & email</li>
-              <li>Free hosting & SSL</li>
-              <li>Unlimited pages</li>
-              <li>Payment gateways</li>
-            </ul>
-            <a
-              href="#contact"
-              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
-              >Get in Touch</a
-            >
-          </div>
-          <!-- Enterprise -->
-          <div class="p-8 bg-gray-50 rounded-lg shadow text-center">
-            <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
-            <p class="mb-6">Custom solutions & free consultation.</p>
-            <a
-              href="#contact"
-              class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
-              >Get in Touch</a
-            >
+          <div class="card-grid card-grid--3">
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--hg1m">
+                <span class="project-card__brand">HG1M</span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">HG1M</h3>
+                <p class="project-card__desc">
+                  Fitness wear brand with full e-commerce functionality, product
+                  catalogue, and a clean shopping experience.
+                </p>
+                <a
+                  href="https://www.hg1m.com"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit site
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--crimson">
+                <span class="project-card__brand">Crimson Cresties</span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Crimson Cresties</h3>
+                <p class="project-card__desc">
+                  E-commerce site for an exotic crested gecko breeder — showcasing
+                  available animals and handling online sales.
+                </p>
+                <a
+                  href="https://www.crimsoncresties.com"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit site
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--empirna">
+                <span class="project-card__brand">Empirna</span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Empirna</h3>
+                <p class="project-card__desc">
+                  Online interior design retailer — a polished launch site built
+                  to present products and drive sales.
+                </p>
+                <a
+                  href="https://www.empirna.com"
+                  class="project-card__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit site
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section id="contact" class="container mx-auto px-6 py-20">
-      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
-      <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow">
-        <form
-          action="mailto:dan@danmoulson.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <div class="mb-4">
-            <label for="name" class="block text-sm font-medium mb-1"
-              >Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full border rounded px-3 py-2"
-              required
-            />
+      <section id="pricing" class="section section--alt">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <span class="section__eyebrow">Packages</span>
+            <h2 class="section__title">Straightforward pricing</h2>
+            <p class="section__desc">
+              Every project is quoted individually, but these packages give you a
+              clear starting point.
+            </p>
+          </header>
+
+          <div class="card-grid card-grid--3">
+            <article class="pricing-card">
+              <h3 class="pricing-card__name">Starter</h3>
+              <ul class="pricing-card__list">
+                <li>Domain name included</li>
+                <li>Free hosting &amp; SSL</li>
+                <li>Unlimited pages</li>
+                <li>Dynamic content support</li>
+              </ul>
+              <a href="#contact" class="btn btn--secondary">Get in touch</a>
+            </article>
+
+            <article class="pricing-card pricing-card--featured">
+              <span class="pricing-card__badge">Popular</span>
+              <h3 class="pricing-card__name">E-Commerce</h3>
+              <ul class="pricing-card__list">
+                <li>Domain &amp; email</li>
+                <li>Free hosting &amp; SSL</li>
+                <li>Unlimited pages</li>
+                <li>Payment gateways</li>
+              </ul>
+              <a href="#contact" class="btn btn--primary">Get in touch</a>
+            </article>
+
+            <article class="pricing-card">
+              <h3 class="pricing-card__name">Enterprise</h3>
+              <p class="pricing-card__note">
+                Custom solutions tailored to your requirements, with a free
+                consultation to scope the work.
+              </p>
+              <a href="#contact" class="btn btn--secondary">Book a call</a>
+            </article>
           </div>
-          <div class="mb-4">
-            <label for="email" class="block text-sm font-medium mb-1"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full border rounded px-3 py-2"
-              required
-            />
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-sm font-medium mb-1"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              class="w-full border rounded px-3 py-2"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700"
-          >
-            Send Message
-          </button>
-        </form>
-        <div class="mt-6 text-center">
-          <p>
-            Email:
-            <a
-              href="mailto:dan@danmoulson.com"
-              class="text-indigo-600 hover:underline"
-              >dan@danmoulson.com</a
-            >
-          </p>
-          <p>
-            Phone:
-            <a href="tel:07878036930" class="text-indigo-600 hover:underline"
-              >07878 036930</a
-            >
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-6">
-      <div class="container mx-auto px-6 text-center text-sm text-gray-600">
-        &copy; 2025 Dan Moulson. All rights reserved.
+      <section id="contact" class="section">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <span class="section__eyebrow">Contact</span>
+            <h2 class="section__title">Let's talk about your project</h2>
+            <p class="section__desc">
+              Tell me what you're building and I'll get back to you with a clear
+              quote and timeline.
+            </p>
+          </header>
+
+          <div class="contact-panel">
+            <div>
+              <p class="contact-panel__intro">
+                The quickest way to reach me is by email or phone. I typically
+                respond within one working day.
+              </p>
+              <div class="contact-panel__actions">
+                <a
+                  href="mailto:dan@danmoulson.com?subject=Website%20enquiry"
+                  class="btn btn--primary"
+                >
+                  Send an email
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-methods">
+              <a href="mailto:dan@danmoulson.com" class="contact-method">
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="M22 7l-10 7L2 7" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact-method__label">Email</span>
+                  <span class="contact-method__value">dan@danmoulson.com</span>
+                </span>
+              </a>
+
+              <a href="tel:07878036930" class="contact-method">
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact-method__label">Phone</span>
+                  <span class="contact-method__value">07878 036930</span>
+                </span>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/dan-moulson"
+                class="contact-method"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-method__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </span>
+                <span>
+                  <span class="contact-method__label">LinkedIn</span>
+                  <span class="contact-method__value">dan-moulson</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span class="site-footer__brand">Dan Moulson Web Solutions</span>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="/cv.html">CV</a>
+        </nav>
+        <span>&copy; 2026 Dan Moulson</span>
       </div>
     </footer>
+
+    <script src="/assets/js/site.js" defer></script>
   </body>
 </html>
