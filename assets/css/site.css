@@ -524,16 +524,8 @@ a {
   overflow: hidden;
 }
 
-.project-card__thumb--hg1m {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-}
-
 .project-card__thumb--crimson {
   background: linear-gradient(135deg, #4a0e0e 0%, #7f1d1d 100%);
-}
-
-.project-card__thumb--empirna {
-  background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
 }
 
 .project-card__brand {
