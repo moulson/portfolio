@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## [2.0.1] — 2026-06-27
+
+### Changed
+
+- Removed CV links from the business site; CV remains available at `/cv.html` via direct URL only.
+- Removed the Harrogate location from the hero and meta description.
+- Removed HG1M and Empirna from case studies (sites no longer live); Crimson Cresties remains.
+
 ## [2.0.0] — 2026-06-27
 
 ### Added
