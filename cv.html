@@ -3,257 +3,342 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Moulson - CV</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta
+      name="description"
+      content="Daniel Moulson — Software and Data Engineer with over 10 years of experience building robust, scalable solutions."
+    />
+    <title>Daniel Moulson — CV</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/site.css" />
   </head>
-  <body class="bg-gray-100 text-gray-800 font-sans">
-    <div class="max-w-4xl mx-auto px-6 py-10">
-      <header class="mb-10">
-        <h1 class="text-4xl font-bold text-gray-900">Daniel Moulson</h1>
-        <p>
-          <a
-            href="mailto:dan.moulson@example.com"
-            class="text-blue-600 underline"
-            >dan@danmoulson.com</a
-          >
-        </p>
-        <p>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="/" class="logo" aria-label="Dan Moulson — home">
+          <span class="logo__mark" aria-hidden="true">DM</span>
+          <span>Dan Moulson</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main navigation">
+          <a href="/">Web Solutions</a>
+          <a href="/cv.html" aria-current="page">CV</a>
+          <a href="mailto:dan@danmoulson.com" class="nav-cta">Contact</a>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open navigation menu"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        id="mobile-nav"
+        class="nav-mobile"
+        data-mobile-nav
+        aria-label="Mobile navigation"
+      >
+        <a href="/">Web Solutions</a>
+        <a href="/cv.html" aria-current="page">CV</a>
+        <a href="mailto:dan@danmoulson.com">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="cv-page">
+      <div class="container">
+        <header class="cv-header">
+          <a href="/" class="cv-header__back">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M19 12H5M12 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Back to web solutions
+          </a>
+          <h1 class="cv-header__title">Daniel Moulson</h1>
+          <p class="cv-header__meta">
+            <a href="mailto:dan@danmoulson.com">dan@danmoulson.com</a>
+            <a
+              href="https://linkedin.com/in/dan-moulson"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/dan-moulson
+            </a>
+          </p>
+        </header>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Professional Profile</h2>
+          <ul class="cv-list">
+            <li>
+              Results-driven Software/Data Engineer with over 10 years of
+              experience designing, building and maintaining robust solutions.
+            </li>
+            <li>
+              Challenge current practices and develop strategic, effective
+              solutions for continuous improvement.
+            </li>
+            <li>Adaptable and quick to learn new technologies and patterns.</li>
+            <li>
+              Strong communicator with the ability to explain technical concepts
+              to non-technical stakeholders.
+            </li>
+            <li>
+              Pursue ongoing professional development during both designated
+              company hours and personal time to strengthen existing skills and
+              explore emerging methods and technologies.
+            </li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Technical Skills</h2>
+          <ul class="cv-list">
+            <li>
+              <strong>Languages &amp; Frameworks:</strong> Python, C#, ASP.NET
+              (MVC &amp; Web API), .NET Framework, Entity Framework
+            </li>
+            <li>
+              <strong>Data:</strong> Snowflake, Azure Data Factory, DBT, SQL
+              Server, T-SQL, PostgreSQL, Database Design &amp; Optimisation,
+              Redis
+            </li>
+            <li>
+              <strong>Tools &amp; Practices:</strong> Cursor, Visual Studio,
+              Git, Azure, PowerBI, bash/zsh, DevOps, AWS, Heroku, Docker, Jira,
+              Scrum/Kanban, Unit/Integration Testing
+              (dbt/xUnit/MSTest/Rspec), Frontend testing (Selenium, Cypress),
+              Terraform
+            </li>
+            <li>
+              <strong>Other:</strong> Scalable RESTful API design, CI/CD
+              pipelines, Remote teamwork, Domain Driven Development (DDD), Test
+              Driven Development (TDD)
+            </li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Professional Experience</h2>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">SAMPeople Ltd | Arbor Education</h3>
+            <p class="cv-job__meta">
+              Software Engineer / Data Engineer · Remote · August 2023 – Present
+            </p>
+            <ul class="cv-job__list">
+              <li>
+                Own and manage the end-to-end Data Engineering stack, responsible
+                for the development, optimisation and reliability of the
+                company's modern analytics platform.
+              </li>
+              <li>
+                Designed and delivered scalable ELT pipelines using Azure Data
+                Factory, dbt and Snowflake to power both internal business
+                analytics and customer-facing paid reporting products.
+              </li>
+              <li>
+                Led the integration of company data into the parent
+                organisation's data lake, applying Kimball dimensional modelling
+                techniques to create accessible and scalable reporting datasets
+                for decision-makers.
+              </li>
+              <li>
+                Built and maintained automated data workflows integrating multiple
+                internal and third-party systems into a centralised analytics
+                platform.
+              </li>
+              <li>
+                Developed dbt transformation models and testing frameworks to
+                improve data quality, consistency and maintainability across
+                reporting datasets.
+              </li>
+              <li>
+                Architect and implement new features using ASP.NET Web API and
+                Entity Framework.
+              </li>
+              <li>
+                Optimised complex LINQ and SQL queries, reducing N+1 issues and
+                delivering significant performance improvements across large data
+                tables and reports.
+              </li>
+              <li>
+                Led data migrations involving large and sensitive datasets while
+                ensuring data integrity and reliability.
+              </li>
+              <li>
+                Worked closely with stakeholders and client-facing teams to
+                deliver scalable reporting and analytics solutions tailored to
+                business and customer requirements.
+              </li>
+              <li>
+                Led the migration from code-generated Excel reports to Power BI,
+                improving data visualisation, report accessibility and customer
+                insight capabilities.
+              </li>
+              <li>
+                Use Terraform and Bicep to improve scalability and automate cloud
+                infrastructure.
+              </li>
+              <li>
+                Implement caching using Redis to reduce load times on frequently
+                accessed resources.
+              </li>
+              <li>Mentor developers and lead Agile ceremonies.</li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">One Beyond</h3>
+            <p class="cv-job__meta">
+              Software Developer · London · May 2021 – August 2023
+            </p>
+            <ul class="cv-job__list">
+              <li>Built multi-tenant apps using .NET and VueJS.</li>
+              <li>
+                Led migration to microservices; improved code coverage and CI/CD
+                setup.
+              </li>
+              <li>Worked closely with UI/UX teams on responsive designs.</li>
+              <li>
+                Collaborated with translators to implement i18n into various
+                applications.
+              </li>
+              <li>
+                Adhered to rigorous code quality standards, contributing to the
+                company's attainment of Microsoft Gold Partner status.
+              </li>
+              <li>
+                Used strong software patterns such as Mediators,
+                Service/Repository pattern and SOLID principles.
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">Pendle Sportswear</h3>
+            <p class="cv-job__meta">
+              Web Developer · Ilkley · January 2021 – May 2021
+            </p>
+            <ul class="cv-job__list">
+              <li>
+                Maintained and enhanced e-commerce systems with PHP and MySQL
+                Server.
+              </li>
+              <li>Integrated APIs and improved payment gateway performance.</li>
+              <li>
+                Took advantage of websockets to build a football club chat app.
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">WPNC</h3>
+            <p class="cv-job__meta">
+              Web Developer · London · October 2019 – January 2021
+            </p>
+            <ul class="cv-job__list">
+              <li>Developed NGO portals with ASP.NET MVC and EF.</li>
+              <li>Used Google Firebase for serverless functionality.</li>
+              <li>Refactored codebase for maintainability and testability.</li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">Capital Index</h3>
+            <p class="cv-job__meta">
+              Software Developer · London · April 2019 – October 2019
+            </p>
+            <ul class="cv-job__list">
+              <li>
+                Developed deposit and withdrawal systems in a fast-paced
+                environment (FX/CFD Broker).
+              </li>
+              <li>Implemented numerous worldwide payment gateways.</li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">Codesigned Ltd</h3>
+            <p class="cv-job__meta">Developer · UK · October 2016 – June 2017</p>
+            <ul class="cv-job__list">
+              <li>Delivered custom .NET web apps from concept to deployment.</li>
+              <li>
+                Maintained multi-environment deployments and debugging processes.
+              </li>
+            </ul>
+          </article>
+
+          <article class="cv-job">
+            <h3 class="cv-job__company">Documobi Ltd</h3>
+            <p class="cv-job__meta">
+              Junior Developer · August 2015 – May 2016
+            </p>
+            <ul class="cv-job__list">
+              <li>
+                Supported development of a start-up SaaS using Ruby on Rails.
+              </li>
+              <li>Introduced to CI/CD using CircleCI.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Education</h2>
+          <p>Level 3 diploma in Software Development using Microsoft Stack.</p>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Certifications &amp; Training</h2>
+          <ul class="cv-list">
+            <li>Microsoft Certified: PowerBI Data Analyst Associate</li>
+            <li>Umbraco Certified Professional</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Personal Interests</h2>
+          <ul class="cv-list">
+            <li>Running</li>
+            <li>Swimming</li>
+            <li>Violin</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span class="site-footer__brand">Daniel Moulson</span>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="/">Web Solutions</a>
+          <a href="mailto:dan@danmoulson.com">Email</a>
           <a
             href="https://linkedin.com/in/dan-moulson"
-            class="text-blue-600 underline"
-            >linkedin.com/in/dan-moulson</a
+            target="_blank"
+            rel="noopener noreferrer"
           >
-        </p>
-      </header>
+            LinkedIn
+          </a>
+        </nav>
+        <span>&copy; 2026 Daniel Moulson</span>
+      </div>
+    </footer>
 
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Professional Profile</h2>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            Results-driven Software/Data Engineer with over 10 years of experience
-            designing, building and maintaining robust solutions.
-          </li>
-          <li>
-            Challenge current practices and develop strategic, effective
-            solutions for continuous improvement
-          </li>
-          <li>Adaptable and quick to learn new technologies and patterns</li>
-          <li>
-            Strong communicator with the ability to explain technical concepts
-            to non-technical stakeholders
-          </li>
-          <li>
-            Pursue ongoing professional development during both designated
-            company hours and personal time to strengthen existing skills and
-            explore emerging methods and technologies.
-          </li>
-        </ul>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Technical Skills</h2>
-        <ul class="list-disc pl-6 space-y-1 text-gray-700">
-          <li>
-            <strong>Languages & Frameworks:</strong> Python, C#, ASP.NET (MVC & Web
-            API), .NET Framework, Entity Framework
-          </li>
-          <li>
-            <strong>Data:</strong> Snowflake, Azure Data Factory, DBT, SQL Server, T-SQL, Postgresql, Database
-            Design & Optimisation, Redis
-          </li>
-          <li>
-            <strong>Tools & Practices:</strong> Cursor, Visual Studio, Git, Azure,
-            PowerBI, bash/zsh, DevOps, AWS, Heroku, Docker, Jira, Scrum/Kanban,
-            Unit/Integration Testing (dbt/xUnit/MSTest/Rspec), Frontend testing (Selenium,
-            Cypress), Terraform
-          </li>
-          <li>
-            <strong>Other:</strong> Scalable RESTful API design, CI/CD
-            pipelines, Remote teamwork, Domain Driven Development (DDD), Test
-            Driven Development (TDD)
-          </li>
-        </ul>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4">Professional Experience</h2>
-        <!-- Job Entry Template -->
-        <!-- Job Entry Template -->
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">SAMPeople Ltd | Arbor Education</h3>
-          <p class="italic">
-            Software Engineer / Data Engineer · Remote · August 2023 - Present
-          </p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>
-              Own and manage the end-to-end Data Engineering stack, responsible for
-              the development, optimisation and reliability of the company’s modern
-              analytics platform.
-            </li>
-            <li>
-              Designed and delivered scalable ELT pipelines using Azure Data Factory,
-              dbt and Snowflake to power both internal business analytics and
-              customer-facing paid reporting products.
-            </li>
-            <li>
-              Led the integration of company data into the parent organisation’s data
-              lake, applying Kimball dimensional modelling techniques to create
-              accessible and scalable reporting datasets for decision-makers.
-            </li>
-            <li>
-              Built and maintained automated data workflows integrating multiple
-              internal and third-party systems into a centralised analytics platform.
-            </li>
-            <li>
-              Developed dbt transformation models and testing frameworks to improve
-              data quality, consistency and maintainability across reporting datasets.
-            </li>
-            <li>
-              Architect and implement new features using ASP.NET Web API and Entity
-              Framework.
-            </li>
-            <li>
-              Optimised complex LINQ and SQL queries, reducing N+1 issues and
-              delivering significant performance improvements across large data tables
-              and reports.
-            </li>
-            <li>
-              Led data migrations involving large and sensitive datasets while ensuring
-              data integrity and reliability.
-            </li>
-            <li>
-              Worked closely with stakeholders and client-facing teams to deliver
-              scalable reporting and analytics solutions tailored to business and
-              customer requirements.
-            </li>
-            <li>
-              Led the migration from code-generated Excel reports to Power BI,
-              improving data visualisation, report accessibility and customer insight
-              capabilities.
-            </li>
-            <li>
-              Use Terraform, Bicep to improve scalability and automate cloud infrastructure.
-            </li>
-            <li>
-              Implement caching using Redis to reduce load times on frequently
-              accessed resources.
-            </li>
-            <li>
-              Mentor developers and lead Agile ceremonies.
-            </li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">One Beyond</h3>
-          <p class="italic">
-            Software Developer · London · May 2021 - August 2023
-          </p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>Built multi-tenant apps using .NET and VueJS</li>
-            <li>
-              Led migration to microservices; improved code coverage and CI/CD
-              setup
-            </li>
-            <li>Worked closely with UI/UX teams on responsive designs</li>
-            <li>
-              Collaborated with translators to implement i18n into various
-              applications
-            </li>
-            <li>
-              Adhered to rigorous code quality standards, contributing to the
-              company's attainment of Microsoft Gold Partner status
-            </li>
-            <li>
-              Used strong software patterns such as Mediators,
-              Service/Repository pattern and SOLID principles
-            </li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">Pendle Sportswear</h3>
-          <p class="italic">Web Developer · Ilkley · Jan 2021 – May 2021</p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>
-              Maintained and enhanced e-commerce systems with PHP and MySQL
-              Server.
-            </li>
-            <li>Integrated APIs and improved payment gateway performance</li>
-            <li>Took advantage of websockets to build a football club chat app</li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">WPNC</h3>
-          <p class="italic">Web Developer · London · Oct 2019 – Jan 2021</p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>Developed NGO portals with ASP .NET MVC and EF</li>
-            <li>Used Google Firebase for serverless functionality</li>
-            <li>Refactored codebase for maintainability and testability</li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">Capital Index</h3>
-          <p class="italic">
-            Software Developer · London · Apr 2019 – Oct 2019
-          </p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>
-              Developed deposit and withdrawal systems in a fast paced
-              environment (FX/CFD Broker)
-            </li>
-            <li>Implemented numerous worldwide payment gateways</li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">Codesigned Ltd</h3>
-          <p class="italic">Developer · UK · Oct 2016 – Jun 2017</p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>Delivered custom .NET web apps from concept to deployment</li>
-            <li>
-              Maintained multi-environment deployments and debugging processes.
-            </li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold">Documobi Ltd</h3>
-          <p class="italic">Junior Developer · Aug 2015 - May 2016</p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li>
-              Supported development of a start up SaaS using Ruby on Rails
-            </li>
-            <li>Introduced to CI/CD using CircleCI</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Education</h2>
-        <p class="text-gray-700">
-          Level 3 diploma in Software Development using Microsoft Stack.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="text-2xl font-semibold mb-2">Certifications & Training</h2>
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>Microsoft Certified: PowerBI Data Analyst Associate</li>
-          <li>Umbraco Certified Professional</li>
-        </ul>
-      </section>
-
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-2">Personal Interests</h2>
-        <ul class="list-disc pl-6 text-gray-700">
-          <li>Running</li>
-          <li>Swimming</li>
-          <li>Violin</li>
-        </ul>
-      </section>
-    </div>
+    <script src="/assets/js/site.js" defer></script>
   </body>
 </html>
