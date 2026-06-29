@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [2.0.2] — 2026-06-27
+
+### Added
+
+- Crimson Cresties case study modal with detailed feature breakdown, led by MorphMarket synchronisation.
+
 ## [2.0.1] — 2026-06-27
 
 ### Changed
