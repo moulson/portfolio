@@ -559,9 +559,9 @@ a {
 
 .project-card__actions {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem 1rem;
+  justify-content: space-between;
+  width: 100%;
   margin-top: auto;
 }
 
@@ -572,6 +572,21 @@ a {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-accent-hover);
+  transition: color 0.15s;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  color: var(--color-ink);
+}
+
+.project-card__action {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
 }
 
 .project-card__link svg {
@@ -584,37 +599,19 @@ a {
   transform: translate(2px, -2px);
 }
 
-.btn--text {
-  padding: 0;
-  background: none;
-  border: none;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-ink-muted);
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.btn--text:hover,
-.btn--text:focus-visible {
-  color: var(--color-ink);
-  transform: none;
-  box-shadow: none;
-}
-
 /* Modal */
 .modal {
   position: fixed;
   inset: 0;
   z-index: 60;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
 }
 
-.modal[hidden] {
-  display: none;
+.modal.is-open {
+  display: flex;
 }
 
 .modal__backdrop {

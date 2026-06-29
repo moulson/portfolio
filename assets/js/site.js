@@ -21,67 +21,76 @@
     });
   }
 
-  const modals = document.querySelectorAll(".modal");
   let activeModal = null;
   let previousFocus = null;
 
   function openModal(modal) {
+    if (!modal || activeModal === modal) return;
+
     previousFocus = document.activeElement;
     activeModal = modal;
-    modal.hidden = false;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
 
-    const closeButton = modal.querySelector("[data-modal-close]");
+    const closeButton = modal.querySelector(".modal__close");
     if (closeButton) {
       closeButton.focus();
     }
   }
 
   function closeModal(modal) {
-    modal.hidden = true;
+    if (!modal) return;
+
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
 
     if (activeModal === modal) {
       activeModal = null;
     }
 
-    if (previousFocus) {
+    if (previousFocus && typeof previousFocus.focus === "function") {
       previousFocus.focus();
       previousFocus = null;
     }
   }
 
-  document.querySelectorAll("[data-modal-open]").forEach(function (trigger) {
-    trigger.addEventListener("click", function () {
-      const modalId = trigger.getAttribute("data-modal-open");
-      const modal = document.getElementById(modalId);
+  document.addEventListener("click", function (event) {
+    const opener = event.target.closest("[data-modal-open]");
+    if (opener) {
+      event.preventDefault();
+      const modalId = opener.getAttribute("data-modal-open");
+      const modal = modalId ? document.getElementById(modalId) : null;
       if (modal) {
         openModal(modal);
       }
-    });
-  });
+      return;
+    }
 
-  modals.forEach(function (modal) {
-    modal.querySelectorAll("[data-modal-close]").forEach(function (closer) {
-      closer.addEventListener("click", function () {
+    const closer = event.target.closest("[data-modal-close]");
+    if (closer) {
+      const modal = closer.closest(".modal");
+      if (modal) {
+        event.preventDefault();
         closeModal(modal);
-      });
-    });
+      }
+    }
   });
 
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      if (activeModal) {
-        closeModal(activeModal);
-        return;
-      }
+    if (event.key !== "Escape") return;
 
-      if (mobileNav && mobileNav.classList.contains("is-open") && toggle) {
-        mobileNav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Open navigation menu");
-        toggle.focus();
-      }
+    if (activeModal) {
+      closeModal(activeModal);
+      return;
+    }
+
+    if (mobileNav && mobileNav.classList.contains("is-open") && toggle) {
+      mobileNav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open navigation menu");
+      toggle.focus();
     }
   });
 })();
