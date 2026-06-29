@@ -179,20 +179,29 @@
               <div class="project-card__body">
                 <h3 class="project-card__title">Crimson Cresties</h3>
                 <p class="project-card__desc">
-                  E-commerce site for an exotic crested gecko breeder — showcasing
-                  available animals and handling online sales.
+                  E-commerce site for an exotic crested gecko breeder, built
+                  around how the business actually sells and manages stock.
                 </p>
-                <a
-                  href="https://www.crimsoncresties.com"
-                  class="project-card__link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit site
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <div class="project-card__actions">
+                  <button
+                    type="button"
+                    class="btn btn--text"
+                    data-modal-open="crimson-cresties-modal"
+                  >
+                    See more
+                  </button>
+                  <a
+                    href="https://www.crimsoncresties.com"
+                    class="project-card__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </article>
           </div>
@@ -333,6 +342,86 @@
         <span>&copy; 2026 Dan Moulson</span>
       </div>
     </footer>
+
+    <div
+      id="crimson-cresties-modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="crimson-cresties-modal-title"
+      hidden
+    >
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog">
+        <header class="modal__header">
+          <h2 id="crimson-cresties-modal-title" class="modal__title">
+            Crimson Cresties
+          </h2>
+          <button
+            type="button"
+            class="modal__close"
+            data-modal-close
+            aria-label="Close"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" />
+            </svg>
+          </button>
+        </header>
+        <div class="modal__body">
+          <p class="modal__intro">
+            A bespoke platform for an exotic crested gecko breeder, designed to
+            handle both direct sales and marketplace listings without duplicate
+            admin work.
+          </p>
+          <ul class="modal__features">
+            <li>
+              <h3 class="modal__feature-title">MorphMarket synchronisation</h3>
+              <p class="modal__feature-desc">
+                Listings sync automatically between the website and MorphMarket,
+                keeping availability consistent across both channels and removing
+                the need to update stock in two places.
+              </p>
+            </li>
+            <li>
+              <h3 class="modal__feature-title">E-commerce</h3>
+              <p class="modal__feature-desc">
+                Product pages, secure checkout, and payment processing built for
+                selling live animals online with the controls the business needs.
+              </p>
+            </li>
+            <li>
+              <h3 class="modal__feature-title">Bespoke CMS</h3>
+              <p class="modal__feature-desc">
+                A custom content management system shaped around how the breeder
+                manages animals, listings, and site content — not a generic
+                template workflow.
+              </p>
+            </li>
+            <li>
+              <h3 class="modal__feature-title">Product &amp; order management</h3>
+              <p class="modal__feature-desc">
+                Centralised tools for tracking inventory, processing orders, and
+                managing fulfilment from a single admin area.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <footer class="modal__footer">
+          <a
+            href="https://www.crimsoncresties.com"
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit site
+          </a>
+          <button type="button" class="btn btn--secondary" data-modal-close>
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
 
     <script src="/assets/js/site.js" defer></script>
   </body>
