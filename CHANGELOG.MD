@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## [2.0.3] — 2026-06-27
+
+### Fixed
+
+- Crimson Cresties "See more" modal now opens reliably via delegated click handling and class-based visibility.
+- Case study action buttons styled consistently and spaced to opposite sides of the card.
+
 ## [2.0.2] — 2026-06-27
 
 ### Added
