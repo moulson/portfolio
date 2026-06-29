@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented in this file.
 
+## [2.1.0] — 2026-06-27
+
+### Added
+
+- Scroll-reveal animations for hero, sections, and cards.
+- CTA target highlighting — contact buttons draw attention to email and phone; other links highlight their destination.
+- Modal fade and scale transitions on open/close.
+- Header shadow on scroll, refined hover states, and nav underline transitions.
+- `prefers-reduced-motion` support throughout.
+
 ## [2.0.3] — 2026-06-27
 
 ### Fixed

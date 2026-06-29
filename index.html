@@ -27,7 +27,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
+    <header class="site-header" data-site-header>
       <div class="container site-header__inner">
         <a href="/" class="logo" aria-label="Dan Moulson — home">
           <span class="logo__mark" aria-hidden="true">DM</span>
@@ -39,7 +39,7 @@
           <a href="#work">Work</a>
           <a href="#pricing">Pricing</a>
           <a href="#contact">Contact</a>
-          <a href="#contact" class="nav-cta">Get a quote</a>
+          <a href="#contact" class="nav-cta" data-highlight="contact-email,contact-phone">Get a quote</a>
         </nav>
 
         <button
@@ -72,7 +72,7 @@
     <main id="main">
       <section class="hero">
         <div class="container hero__grid">
-          <div>
+          <div class="hero__content reveal">
             <h1 class="hero__title">
               Websites built with care,<br />
               <em>designed to grow</em> with you
@@ -83,12 +83,12 @@
               businesses that need more than a template.
             </p>
             <div class="hero__actions">
-              <a href="#contact" class="btn btn--primary">Start a project</a>
-              <a href="#work" class="btn btn--secondary">View my work</a>
+              <a href="#contact" class="btn btn--primary" data-highlight="contact-email,contact-phone">Start a project</a>
+              <a href="#work" class="btn btn--secondary" data-highlight="work-showcase">View my work</a>
             </div>
           </div>
 
-          <div class="hero__visual" aria-hidden="true">
+          <div class="hero__visual reveal reveal--delay-2" aria-hidden="true">
             <div class="profile-card">
               <span class="profile-card__initials">DM</span>
               <div class="profile-card__label">
@@ -102,7 +102,7 @@
 
       <section id="services" class="section section--alt">
         <div class="container">
-          <header class="section__header section__header--center">
+          <header class="section__header section__header--center reveal">
             <span class="section__eyebrow">What I do</span>
             <h2 class="section__title">Everything your site needs</h2>
             <p class="section__desc">
@@ -111,8 +111,8 @@
             </p>
           </header>
 
-          <div class="card-grid card-grid--3">
-            <article class="service-card">
+          <div class="card-grid card-grid--3" id="services-grid">
+            <article class="service-card reveal reveal--delay-1">
               <div class="service-card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -125,10 +125,10 @@
                 e-commerce, and dynamic content — built around how your business
                 actually works.
               </p>
-              <a href="#pricing" class="service-card__link">See packages →</a>
+              <a href="#pricing" class="service-card__link" data-highlight="pricing-featured">See packages →</a>
             </article>
 
-            <article class="service-card">
+            <article class="service-card reveal reveal--delay-2">
               <div class="service-card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -139,10 +139,10 @@
                 Reliable hosting from £7/month with SSL, backups, and updates on
                 request. Your site stays fast, secure, and online.
               </p>
-              <a href="#contact" class="service-card__link">Ask about hosting →</a>
+              <a href="#contact" class="service-card__link" data-highlight="contact-email,contact-phone">Ask about hosting →</a>
             </article>
 
-            <article class="service-card">
+            <article class="service-card reveal reveal--delay-3">
               <div class="service-card__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -155,7 +155,7 @@
                 standard e-commerce. Free consultation to scope your
                 requirements.
               </p>
-              <a href="#contact" class="service-card__link">Book a consultation →</a>
+              <a href="#contact" class="service-card__link" data-highlight="contact-email,contact-phone">Book a consultation →</a>
             </article>
           </div>
         </div>
@@ -163,7 +163,7 @@
 
       <section id="work" class="section">
         <div class="container">
-          <header class="section__header section__header--center">
+          <header class="section__header section__header--center reveal">
             <span class="section__eyebrow">Selected work</span>
             <h2 class="section__title">Recent client projects</h2>
             <p class="section__desc">
@@ -172,7 +172,7 @@
           </header>
 
           <div class="card-grid card-grid--3">
-            <article class="project-card">
+            <article class="project-card reveal" id="work-showcase">
               <div class="project-card__thumb project-card__thumb--crimson">
                 <span class="project-card__brand">Crimson Cresties</span>
               </div>
@@ -210,7 +210,7 @@
 
       <section id="pricing" class="section section--alt">
         <div class="container">
-          <header class="section__header section__header--center">
+          <header class="section__header section__header--center reveal">
             <span class="section__eyebrow">Packages</span>
             <h2 class="section__title">Straightforward pricing</h2>
             <p class="section__desc">
@@ -220,7 +220,7 @@
           </header>
 
           <div class="card-grid card-grid--3">
-            <article class="pricing-card">
+            <article class="pricing-card reveal reveal--delay-1">
               <h3 class="pricing-card__name">Starter</h3>
               <ul class="pricing-card__list">
                 <li>Domain name included</li>
@@ -228,10 +228,10 @@
                 <li>Unlimited pages</li>
                 <li>Dynamic content support</li>
               </ul>
-              <a href="#contact" class="btn btn--secondary">Get in touch</a>
+              <a href="#contact" class="btn btn--secondary" data-highlight="contact-email,contact-phone">Get in touch</a>
             </article>
 
-            <article class="pricing-card pricing-card--featured">
+            <article class="pricing-card pricing-card--featured reveal reveal--delay-2" id="pricing-featured">
               <span class="pricing-card__badge">Popular</span>
               <h3 class="pricing-card__name">E-Commerce</h3>
               <ul class="pricing-card__list">
@@ -240,16 +240,16 @@
                 <li>Unlimited pages</li>
                 <li>Payment gateways</li>
               </ul>
-              <a href="#contact" class="btn btn--primary">Get in touch</a>
+              <a href="#contact" class="btn btn--primary" data-highlight="contact-email,contact-phone">Get in touch</a>
             </article>
 
-            <article class="pricing-card">
+            <article class="pricing-card reveal reveal--delay-3">
               <h3 class="pricing-card__name">Enterprise</h3>
               <p class="pricing-card__note">
                 Custom solutions tailored to your requirements, with a free
                 consultation to scope the work.
               </p>
-              <a href="#contact" class="btn btn--secondary">Book a call</a>
+              <a href="#contact" class="btn btn--secondary" data-highlight="contact-email,contact-phone">Book a call</a>
             </article>
           </div>
         </div>
@@ -257,7 +257,7 @@
 
       <section id="contact" class="section">
         <div class="container">
-          <header class="section__header section__header--center">
+          <header class="section__header section__header--center reveal">
             <span class="section__eyebrow">Contact</span>
             <h2 class="section__title">Let's talk about your project</h2>
             <p class="section__desc">
@@ -266,7 +266,7 @@
             </p>
           </header>
 
-          <div class="contact-panel">
+          <div class="contact-panel reveal">
             <div>
               <p class="contact-panel__intro">
                 The quickest way to reach me is by email or phone. I typically
@@ -276,6 +276,7 @@
                 <a
                   href="mailto:dan@danmoulson.com?subject=Website%20enquiry"
                   class="btn btn--primary"
+                  data-highlight="contact-email"
                 >
                   Send an email
                 </a>
@@ -283,7 +284,7 @@
             </div>
 
             <div class="contact-methods">
-              <a href="mailto:dan@danmoulson.com" class="contact-method">
+              <a href="mailto:dan@danmoulson.com" class="contact-method" id="contact-email">
                 <span class="contact-method__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -296,7 +297,7 @@
                 </span>
               </a>
 
-              <a href="tel:07878036930" class="contact-method">
+              <a href="tel:07878036930" class="contact-method" id="contact-phone">
                 <span class="contact-method__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
