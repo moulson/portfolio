@@ -603,7 +603,7 @@ a {
 
 .project-card__thumb--crimson {
   background: linear-gradient(135deg, #4a0e0e 0%, #7f1d1d 100%);
-  background-image: url(https://crimsoncresties.s3.eu-west-1.amazonaws.com/g06bnxk6w3snbmc3utlrxznx8x1t?response-content-disposition=inline%3B%20filename%3D%22cropped.jpg%22%3B%20filename%2A%3DUTF-8%27%27cropped.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATUDO3VVOMB7FN2PO%2F20260629%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20260629T112158Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9a1208f36d25cacb97e763fc361cbd5700cd09eae2e39d9e30058a44d9cbbfb4);
+  background-image: url(../cropped.jpg);
   background-size: contain;
 }
 
